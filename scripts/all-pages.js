@@ -5,11 +5,11 @@ const root = "/WSOA3029A_2562617";
 const menuItems = [
     { name: "Home", href: root + "/index.html" },
     { name: "About", href: `${root}/about/about.html` },
+    { name: "Characters", href: `${root}/content/characters.html` },
+    { name: "Episodes", href: `${root}/content/episodes.html` },
+    { name: "Design", href: `${root}/design/design.html` },
     { name: "Theory", href: `${root}/theory/theory.html` },
     { name: "Essay", href: `${root}/theory/essay.html` },
-    { name: "Design", href: `${root}/design/design.html` },
-    { name: "Content", href: `${root}/content/content.html` },
-    { name: "Data-Visualisations", href: `${root}/data-visualisations/data-visualisations.html` },
 ]
 
 //Function for the nav menu
@@ -18,6 +18,7 @@ export function initialiseMenu (currentPage) {
     const ul = document.createElement("ul");
     ul.classList.add("menu");
 
+    //When the user is on a page its nav menu list item will not be underlined
     for (let menuItem of menuItems) {
         const li = document.createElement("li");
         li.classList.add("menu-item");
