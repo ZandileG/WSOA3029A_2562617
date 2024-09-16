@@ -1,4 +1,4 @@
-//An array of all the nav menu items
+/*//An array of all the nav menu items
 const menuItems = [
     { name: "Home", href: "/index.html" },
     { name: "About", href: "/about/about.html" },
@@ -30,7 +30,7 @@ export function initialiseMenu (currentPage) {
         ul.appendChild(li);
     }
     nav.appendChild(ul);
-}
+}*/
 
 //Next and Back buttons
 //When you click on them, it gets the data target attribute from the button and changes the page
