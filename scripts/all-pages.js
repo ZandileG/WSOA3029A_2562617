@@ -1,12 +1,15 @@
-//An array of all the nav menu items
+//Nav Menu
+const root = "/WSOA3029A_2562617"
+
+//An array of all the menu tabs
 const menuItems = [
-    { name: "Home", href: "/index.html" },
-    { name: "About", href: "/about/index.html" },
-    { name: "Design", href: "/design/index.html" },
-    { name: "Theory", href: "/theory/index.html" },
-    { name: "Essay", href: "/theory/index.html" },
-    { name: "Content", href: "/content/index.html" },
-    { name: "Data-Visualisations", href: "/data-visualisations/data-visualisations.html" },
+    { name: "Home", href: root + "/index.html" },
+    { name: "About", href: `${root}/about/about.html` },
+    { name: "Theory", href: `${root}/theory/theory.html` },
+    { name: "Essay", href: `${root}/essay/essay.html` },
+    { name: "Design", href: `${root}/design/design.html` },
+    { name: "Content", href: `${root}/content/content.html` },
+    { name: "Data-Visualisations", href: `${root}/data-visualisations/data-visualisations.html` },
 ]
 
 //Function for the nav menu
