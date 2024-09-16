@@ -1,5 +1,5 @@
 //Nav Menu
-const root = "/WSOA3029A_2562617"
+const root = "/WSOA3029A_2562617";
 
 //An array of all the menu tabs
 const menuItems = [
