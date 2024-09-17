@@ -6,8 +6,7 @@ https://api.tvmaze.com/shows/49/episodes*/
 The data visualizations should be surrounded by their appropriate context (UI/UX), 
 e.g.: tooltips, legends, maps, keys, explanations/expansion text, titles, etc. */
 
-fetch('https://api.tvmaze.com/shows/49/episodes')
+fetch("https://api.tvmaze.com/singlesearch/shows?q=brooklyn+nine-nine&embed=episodes")
   .then(response => response.json())
-  .then(data => console.log(data))
-  .catch(error => console.error('Error:', error));
+  .then(data => console.log(data));
   
