@@ -7,6 +7,7 @@ const menuItems = [
     { name: "About", href: `${root}/about/about.html` },
     { name: "Characters", href: `${root}/content/characters.html` },
     { name: "Episodes", href: `${root}/content/episodes.html` },
+    { name: "Fan Art", href: `${root}/content/fan-art.html` },
     { name: "Design", href: `${root}/design/design.html` },
     { name: "Theory", href: `${root}/theory/theory.html` },
     { name: "Essay", href: `${root}/theory/essay.html` },
