@@ -37,4 +37,5 @@ html{
 
 .nav li.active:hover{
     font-weight: bold;
+    background: rgb(255, 255, 255);
 }
