@@ -1,0 +1,36 @@
+/*Styling for the nav bar*/
+.nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    list-style-type: none;
+    justify-content: flex-end; 
+    margin-bottom: 60px;
+    position: absolute;
+    right: 80px;
+    top: 0;
+    gap: 10px;
+}
+
+.nav ul li{
+    padding: 5px;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.nav ul li:hover{
+    background: rgb(145, 177, 235);
+}
+
+.nav li.active{
+    font-weight: bold;
+    cursor: default;
+}
+
+.nav li.active:hover{
+    font-weight: bold;
+}

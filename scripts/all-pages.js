@@ -47,4 +47,4 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-/*Interactivity — elements such as sliders, carousels, and animations, etc. to create interactivity and smooth animations for scrolling, transitions, and other effects, enhancing the visual appeal of a website.*/
+

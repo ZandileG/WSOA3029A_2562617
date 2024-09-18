@@ -1,0 +1,16 @@
+/*Styling for the reading progress bar*/
+.progress-container {
+    width: 105%;
+    height: 8px;
+    margin-left: -9px;
+    background: rgb(63, 6, 231) ;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+}
+
+#progress-bar {
+    height: 100%;
+    background: rgb(255, 238, 0);
+    width: 0%;
+}

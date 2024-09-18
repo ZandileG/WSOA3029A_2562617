@@ -8,26 +8,29 @@
     <meta name="description" content ="Homepage">
     <meta name="author" content="Zandile Gebuza">
     <title>Home</title>
+
     <script type="module"> import { initialiseMenu } from "./scripts/all-pages.js"
     initialiseMenu("Home")</script>
+    <script type="module" src="./scripts/misc-elements.js"></script>
+
     <link rel="stylesheet" href="./styles/all-pages.css">
 </head>
-<body>
-    <a id="top"></a>
-    <header>
-        <div class="logo"><img src="../images/Logo.png" alt="Logo"></div>
 
-        <nav class="home-nav"><!--menu is added using js--></nav>
+<body>
+    <header>
+        <div class="logo"><img src="images/Logo.png" alt="Logo"></div>
+
+        <nav class="nav"><!--menu is added using js--></nav>
     </header>
     
     <main>
-        <p>Welcome Message: A brief introduction to the fan site and its purpose.</p>
+        <h2 id="Message"></h2>
+
         <img src="images/Poster 4.jpg" alt="Brooklyn Nine-Nine Poster">
     </main>
 
     <div class="button-container">
     <button id="next" data-target="./about/about.html"><img src="images/arrow-right.png" class="button" alt="Next"></button>
-    <button class="back-to-top" data-target="#top">Back To Top</button>
     </div>
 
     <footer>
