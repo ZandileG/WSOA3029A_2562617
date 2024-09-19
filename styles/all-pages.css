@@ -2,15 +2,16 @@ html{
     scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
     margin-left: 2rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
 }
 
 main{
     padding-bottom: 2rem;
+    text-align: justify;
 }
 
 .logo{
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
 }
 
 /*Styling for the nav menu*/

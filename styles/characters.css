@@ -1,6 +1,5 @@
 .character-info ul li{
     list-style-type: none;
-    padding-bottom: 1rem;
 }
 
 .character-image{
@@ -16,6 +15,23 @@
 .character-image2{
     width: 32rem;
     height: 32rem;
+}
+
+.character-name{
+    padding-left: 2.5rem;
+    padding-top: 2rem;
+}
+
+.list-title{
+    font-weight: bold;
+}
+
+.list-item{
+    padding-bottom: 1rem;
+}
+
+.quote{
+    padding-left: 2.5rem;
 }
 
 section{
