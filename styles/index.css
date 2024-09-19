@@ -1,0 +1,28 @@
+body{
+    background-image: url("../images/Poster 3.jpg");
+    background-size: cover;
+}
+
+.nav ul li a{
+    color: white;
+}
+
+section{
+    display: flex;
+    gap: 1rem;
+}
+
+.home-image{
+    width: 45rem;
+    height: 30rem;
+}
+
+.home-image1{
+    width: 91rem;
+    height: 55rem;
+}
+
+#Message{
+    text-align: center;
+    color: white;
+}

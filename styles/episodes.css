@@ -1,0 +1,17 @@
+html{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.episode-container{
+    display: flex;
+}
+
+.episode-info{
+    padding-right: 3rem;
+}
+
+video{
+    width: 50rem;
+    height: 35rem;
+}

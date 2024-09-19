@@ -1,8 +1,6 @@
 html{
     scrollbar-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
-    margin-left: 2rem;
-    margin-right: 1.5rem;
 }
 
 main{
@@ -37,16 +35,16 @@ main{
     font-weight: bold;
 }
 
-.nav ul li:hover{
-    background: rgb(145, 177, 235);
+.nav ul li a:hover{
+    color: rgb(63, 6, 231);
 }
 
 .nav li.active{
     font-weight: bold;
     cursor: default;
+    color: rgb(142, 142, 142);
 }
 
 .nav li.active:hover{
     font-weight: bold;
-    background: rgb(255, 255, 255);
 }

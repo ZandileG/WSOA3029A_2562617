@@ -10,7 +10,6 @@ const menuItems = [
     { name: "Fan Art", href: `${root}/content/fan-art.html` },
     { name: "Design", href: `${root}/design/design.html` },
     { name: "Theory", href: `${root}/theory/theory.html` },
-    { name: "Essay", href: `${root}/theory/essay.html` },
 ]
 
 //Function for the nav menu

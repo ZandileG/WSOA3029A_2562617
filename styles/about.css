@@ -1,0 +1,21 @@
+html{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+section{
+    display: flex;
+}
+
+.about-info{
+    padding-right: 3rem;
+}
+
+.about-info2{
+    padding-left: 3rem;
+}
+
+.about-image{
+    width: 40rem;
+    height: 25rem;
+}

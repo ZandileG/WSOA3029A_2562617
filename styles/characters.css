@@ -1,3 +1,8 @@
+html{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 .character-info ul li{
     list-style-type: none;
 }

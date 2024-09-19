@@ -1,3 +1,8 @@
+html{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 /*Styling for the reading progress bar*/
 .progress-container {
     width: 100rem;
