@@ -1,3 +1,23 @@
 .character-info ul li{
     list-style-type: none;
+    padding-bottom: 1rem;
+}
+
+.character-image{
+    width: 32rem;
+    height: 30rem;
+}
+
+.character-image1{
+    width: 32rem;
+    height: 38rem;
+}
+
+.character-image2{
+    width: 32rem;
+    height: 32rem;
+}
+
+section{
+    display: flex;
 }
