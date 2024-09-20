@@ -10,7 +10,7 @@ const menuItems = [
     { name: "Fan Art", href: `${root}/content/fan-art.html` },
     { name: "Design", href: `${root}/design/design.html` },
     { name: "Theory", href: `${root}/theory/theory.html` },
-]
+];
 
 //Function for the nav menu
 export function initialiseMenu (currentPage) {
@@ -34,7 +34,7 @@ export function initialiseMenu (currentPage) {
         ul.appendChild(li);
     }
     nav.appendChild(ul);
-}
+};
 
 //Next and Back buttons
 //When you click on them, it gets the data target attribute from the button and changes the page

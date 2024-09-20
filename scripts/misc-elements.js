@@ -10,7 +10,7 @@
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
       document.getElementById("progress-bar").style.width = scrolled + "%";
-  }
+  };
 
 //Animate images 
 //when the user hovers over an image, it changes the scale of the image when the cursor is on it for 0.2seconds
