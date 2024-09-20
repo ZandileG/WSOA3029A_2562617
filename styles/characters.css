@@ -8,8 +8,8 @@ header{
 }
 
 main{
-    margin-left: 2rem;
-    margin-right: 2rem;
+    margin-left: 5rem;
+    margin-right: 7rem;
     margin-top: 2rem;
     font-family: "Quicksand";
     font-size: 1rem;
@@ -27,26 +27,25 @@ main a{
 }
 
 .character-image{
-    width: 32rem;
-    height: 30rem;
+    width: 25rem;
+    height: 24rem;
     border: 0.125rem solid black;
 }
 
 .character-image1{
-    width: 32rem;
-    height: 38rem;
+    width: 25rem;
+    height: 29rem;
     border: 0.125rem solid black;
 }
 
 .character-image2{
-    width: 32rem;
-    height: 32rem;
+    width: 25rem;
+    height: 25rem;
     border: 0.125rem solid black;
 }
 
 .character-name{
     padding-left: 2.5rem;
-    padding-top: 2rem;
 }
 
 .list-title{
