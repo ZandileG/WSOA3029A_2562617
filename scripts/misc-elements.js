@@ -33,7 +33,8 @@ images.forEach(image => {
 const messages = [
   "Welcome to my fan website for Brooklyn Nine-Nine!",
   "I hope you enjoy the content I am bringing to you.",
-  "Are you ready to become a member of the 99th Precinct?"
+  "Are you ready to become a new member of the 99th precinct?",
+  `<p id="Start"><a href="../about/about.html">Start</a></p>`
 ];
 
 let index = 0;
@@ -41,13 +42,14 @@ let index = 0;
 const displayMessage = function(){
   if (index < messages.length) {
       const heading = document.getElementById("Message");
-      heading.textContent = messages[index];
+      
+      // Use innerHTML to handle the link in the third message
+      heading.innerHTML = messages[index];
       index++;
       setTimeout(displayMessage, 2500);
   }
 };
 
 displayMessage();
-
 
 /*Interactivity — elements such as sliders, carousels, and animations, etc. to create interactivity and smooth animations for scrolling, transitions, and other effects, enhancing the visual appeal of a website.*/

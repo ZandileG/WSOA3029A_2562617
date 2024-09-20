@@ -3,6 +3,14 @@ body{
     background-size: cover;
 }
 
+header{
+    background-color: rgba(0, 0, 0, 0.079);
+}
+
+.nav ul{
+    padding-top: 1.35rem;
+}
+
 .nav ul li a{
     color: white;
 }
@@ -22,7 +30,27 @@ section{
     height: 55rem;
 }
 
+main{
+    font-family: "Quicksand";
+    font-size: 1.15rem;
+}
+
 #Message{
     text-align: center;
     color: white;
+    padding-top: 2rem;
+    font-weight: bold;
+}
+
+#Start{
+    text-align: center;
+}
+
+#Start a{
+    text-decoration: none;
+    color: white;
+}
+
+#Start a:hover{
+    color: rgb(142, 142, 142);
 }

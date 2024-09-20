@@ -8,12 +8,10 @@ main{
     text-align: justify;
 }
 
-.logo{
-    padding-bottom: 3rem;
-}
-
 /*Styling for the nav menu*/
 .nav ul{
+    font-family: "Fira Sans";
+    font-size: 1.2rem;
     display: flex;
     flex-wrap: wrap;
     font-size: 1.25rem;
@@ -36,7 +34,7 @@ main{
 }
 
 .nav ul li a:hover{
-    color: rgb(63, 6, 231);
+    color: rgb(213, 213, 15);
 }
 
 .nav li.active{
