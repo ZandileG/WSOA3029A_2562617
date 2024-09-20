@@ -1,9 +1,18 @@
 main{
     font-family: "Quicksand";
     font-size: 1rem;
-    margin-left: 2rem;
+    margin-left: 1.25rem;
     margin-right: 2rem;
     margin-top: 2rem;
+}
+
+header{
+    margin-right: -0.5rem;
+    background-color: rgba(0, 0, 0, 0.079);
+}
+
+.nav ul{
+    top: 2rem
 }
 
 section{
@@ -11,14 +20,15 @@ section{
 }
 
 .about-info{
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 .about-info2{
-    padding-left: 3rem;
+    padding-left: 2rem;
 }
 
 .about-image{
     width: 42rem;
     height: 28rem;
+    border: 0.125rem solid black;
 }

@@ -1,3 +1,12 @@
+header{
+    margin-right: -0.5rem;
+    background-color: rgba(0, 0, 0, 0.079);
+}
+
+.nav ul{
+    top: 2rem
+}
+
 main{
     margin-left: 2rem;
     margin-right: 2rem;
@@ -15,54 +24,64 @@ main{
 .image1{
     width: 50rem;
     height: 30rem;
-    padding-left: 7rem;
+    margin-left: 7rem;
+    border: 0.25rem solid black;
 }
 
 .image2{
     width: 22rem;
     height: 30rem;
+    border: 0.25rem solid black;
 }
 
 .image3{
     width: 30rem;
     height: 40rem;
+    border: 0.25rem solid black;
 }
 
 .image4{
     width: 50rem;
     height: 40rem;
-    padding-left: 4rem;
+    margin-left: 4rem;
+    border: 0.25rem solid black;
 }
 
 .image5{
     width: 30rem;
     height: 42rem;
-    padding-left: 10rem;
+    margin-left: 10rem;
+    border: 0.25rem solid black;
 }
 
 .image6{
     width: 38rem;
     height: 42rem;
+    border: 0.25rem solid black;
 }
 
 .image7{
     width: 38rem;
     height: 38rem;
-    padding-left: 9rem;
+    margin-left: 9rem;
+    border: 0.25rem solid black;
 }
 
 .image8{
     width: 30rem;
     height: 38rem;
+    border: 0.25rem solid black;
 }
 
 .image9{
     width: 35rem;
     height: 40rem;
-    padding-left: 9rem;
+    margin-left: 9rem;
+    border: 0.25rem solid black;
 }
 
 .image10{
     width: 35rem;
     height: 40rem;
+    border: 0.25rem solid black;
 }

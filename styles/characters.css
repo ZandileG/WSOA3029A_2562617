@@ -1,9 +1,25 @@
+header{
+    margin-right: -0.5rem;
+    background-color: rgba(0, 0, 0, 0.079);
+}
+
+.nav ul{
+    top: 2rem
+}
+
 main{
     margin-left: 2rem;
     margin-right: 2rem;
     margin-top: 2rem;
     font-family: "Quicksand";
     font-size: 1rem;
+}
+
+main a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
 }
 
 .character-info ul li{
@@ -13,16 +29,19 @@ main{
 .character-image{
     width: 32rem;
     height: 30rem;
+    border: 0.125rem solid black;
 }
 
 .character-image1{
     width: 32rem;
     height: 38rem;
+    border: 0.125rem solid black;
 }
 
 .character-image2{
     width: 32rem;
     height: 32rem;
+    border: 0.125rem solid black;
 }
 
 .character-name{
