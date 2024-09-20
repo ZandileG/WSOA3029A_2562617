@@ -1,3 +1,7 @@
+body{
+    background-color: rgb(236, 226, 226);
+}
+
 main{
     font-family: "Quicksand";
     font-size: 1rem;
@@ -8,7 +12,7 @@ main{
 
 header{
     margin-right: -0.5rem;
-    background-color: rgba(0, 0, 0, 0.079);
+    background-color: rgb(88, 84, 84);
 }
 
 .nav ul{

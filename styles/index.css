@@ -3,10 +3,6 @@ body{
     background-size: cover;
 }
 
-.nav ul li a{
-    color: white;
-}
-
 section{
     display: flex;
     gap: 1rem;

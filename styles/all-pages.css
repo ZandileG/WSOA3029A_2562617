@@ -36,11 +36,12 @@ h1, h2, h3{
     padding: 1rem;
     border-right: 0.125rem solid black;
     border-bottom: 0.125rem solid black;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.37);
 }
 
 .nav ul li a{
     text-decoration: none;
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -56,4 +57,27 @@ h1, h2, h3{
 
 .nav li.active:hover{
     font-weight: bold;
+}
+
+footer{
+    background-color: rgb(88, 84, 84);
+    margin-left: -1rem;
+    margin-right: -1rem;
+    margin-bottom: -1rem;
+    font-family: "Quicksand";
+    font-size: 1rem;
+}
+
+footer p{
+    text-align: center;
+    color: white;
+    padding-top: 1rem;
+}
+
+.icons{
+    margin-left: 48%;
+}
+
+.button-container{
+    margin-left: 46%;
 }
