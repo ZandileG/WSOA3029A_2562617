@@ -3,14 +3,6 @@ body{
     background-size: cover;
 }
 
-header{
-    background-color: rgba(0, 0, 0, 0.079);
-}
-
-.nav ul{
-    padding-top: 1.35rem;
-}
-
 .nav ul li a{
     color: white;
 }
