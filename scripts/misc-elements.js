@@ -13,7 +13,7 @@
   };
 
 //Animate images 
-//when the user hovers over an image, it changes the scale of the image when the cursor is on it for 0.2seconds
+//Changes the scale of the image for 0.2seconds when the user hovers over the image and goes back when they are not hovering
 const images = document.querySelectorAll(".image");
 
 images.forEach(image => {
@@ -30,11 +30,13 @@ images.forEach(image => {
 
 //Welcome Message
 //These messages appear 2.5 seconds after each other
+const root = "/WSOA3029A_2562617";
+
 const messages = [
   "Welcome to my fan website for Brooklyn Nine-Nine!",
   "I hope you enjoy the content I am bringing to you.",
   "Are you ready to become a new member of the 99th precinct?",
-  `<p id="Start"><a href="/WSOA3029A_2562617/about/about.html">Start</a></p>`
+  `<p id="Start"><a href: ${root}/about/about.html>Start</a></p>`
 ];
 
 let index = 0;
@@ -43,7 +45,6 @@ const displayMessage = function(){
   if (index < messages.length) {
       const heading = document.getElementById("Message");
       
-      // Use innerHTML to handle the link in the third message
       heading.innerHTML = messages[index];
       index++;
       setTimeout(displayMessage, 2500);
@@ -52,4 +53,3 @@ const displayMessage = function(){
 
 displayMessage();
 
-/*Interactivity — elements such as sliders, carousels, and animations, etc. to create interactivity and smooth animations for scrolling, transitions, and other effects, enhancing the visual appeal of a website.*/
