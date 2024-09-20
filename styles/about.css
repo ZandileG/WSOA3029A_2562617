@@ -29,6 +29,7 @@ section{
 
 .about-image{
     width: 42rem;
-    height: 28rem;
+    height: 27rem;
+    margin-top: 1rem;
     border: 0.125rem solid black;
 }
