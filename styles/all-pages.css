@@ -60,9 +60,9 @@ h1, h2, h3{
 }
 
 footer{
-    background-color: rgb(88, 84, 84);
+    background-color: rgba(104, 84, 73, 1);
     margin-left: -1rem;
-    margin-right: -0.5rem;
+    margin-right: -0.48rem;
     margin-bottom: -1rem;
     font-family: "Nunito";
     font-size: 1rem;

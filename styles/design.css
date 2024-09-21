@@ -1,6 +1,6 @@
 header{
     margin-right: -0.5rem;
-    background-color: rgb(88, 84, 84);
+    background-color: rgba(104, 84, 73, 1);
 }
 
 .nav ul{
@@ -19,6 +19,12 @@ main{
     font-size: 1rem;
 }
 
+h2, h3{
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 /*Styling for the reading progress bar*/
 .progress-container {
     width: 100rem;
@@ -31,5 +37,13 @@ main{
 
 #progress-bar {
     height: 100%;
-    background-color: rgb(88, 84, 84);
+    background-color: rgba(104, 84, 73, 1);
+}
+
+.style-guide{
+    width: 55rem;
+    height: 100rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
