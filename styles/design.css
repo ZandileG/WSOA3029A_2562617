@@ -46,22 +46,30 @@ h2, h3{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 0.125rem solid black;
 }
 
 .information-structure{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 78rem;
+    height: 45rem;
+    border: 0.125rem solid black;
 }
 
 .user-flow{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 78rem;
+    height: 45rem;
+    border: 0.125rem solid black;
 }
 
 .interaction-points{
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    width: 78rem;
+    height: 45rem;
+    border: 0.125rem solid black;
 }
+
+
+
+
