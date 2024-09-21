@@ -11,6 +11,8 @@
 
     <script type="module"> import { initialiseMenu } from "../scripts/all-pages.js"
     initialiseMenu("Episodes")</script>
+    <script type="module" src="../scripts/top-button.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <script src="https://api.tvmaze.com"></script>
 
@@ -57,10 +59,9 @@
     </article>
     </main>
 
-    <div class="button-container">
-        <button class="back-to-top" data-target="#top"><img src="../images/arrow-up.png" class="button" alt="Top"></button>
-        <button id="back" data-target="characters.html"><img src="../images/arrow-left.png" class="button" alt="Back"></button>
-        <button id="next" data-target="fan-art.html"><img src="../images/arrow-right.png" class="button" alt="Next"></button>
+    <div id="button-container">
+        <button class="back-to-top"><img src="../images/arrow-up.png" class="button" alt="Top"></button>
+        <!--nav buttons added using js-->
     </div>
 
     <footer>

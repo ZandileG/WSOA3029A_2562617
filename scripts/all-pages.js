@@ -37,7 +37,7 @@ export function initialiseMenu (currentPage) {
 };
 
 //Function to create next and back buttons for each page
-function createNavButtons(backTarget, nextTarget) {
+function createNavButtons(backTarget, nextTarget){
     const buttonContainer = document.getElementById("button-container");
 
     //Creates a back button
@@ -49,7 +49,6 @@ function createNavButtons(backTarget, nextTarget) {
     const backImage = document.createElement("img");
     backImage.setAttribute("src", "../images/arrow-left.png");
     backImage.setAttribute("class", "button");
-    backImage.setAttribute("alt", "Back");
     
     //Makes the image appear on the button
     backButton.appendChild(backImage);
@@ -63,7 +62,6 @@ function createNavButtons(backTarget, nextTarget) {
     const nextImage = document.createElement("img");
     nextImage.setAttribute("src", "../images/arrow-right.png");
     nextImage.setAttribute("class", "button");
-    nextImage.setAttribute("alt", "Next");
     
     //Makes the image appear on the button
     nextButton.appendChild(nextImage);
@@ -73,11 +71,11 @@ function createNavButtons(backTarget, nextTarget) {
     buttonContainer.appendChild(nextButton);
 
     //Event listeners for the button functionality
-    backButton.addEventListener("click", function() {
+    backButton.addEventListener("click", function(){
         window.location.href = backButton.getAttribute("data-target");
     });
     
-    nextButton.addEventListener("click", function() {
+    nextButton.addEventListener("click", function(){
         window.location.href = nextButton.getAttribute("data-target");
     });
 };
@@ -85,27 +83,27 @@ function createNavButtons(backTarget, nextTarget) {
 //Button functionality for the different pages
 document.addEventListener("DOMContentLoaded", function(){
 
-    if (window.location.pathname.endsWith("design/design.html")) {
+    if (window.location.pathname.endsWith("design/design.html")){
         createNavButtons("../content/fan-art.html", "../theory/theory.html");
     }
     
-    if (window.location.pathname.endsWith("theory/theory.html")) {
+    if (window.location.pathname.endsWith("theory/theory.html")){
         createNavButtons("../design/design.html", "../index.html");
     }
     
-    if (window.location.pathname.endsWith("content/characters.html")) {
+    if (window.location.pathname.endsWith("content/characters.html")){
         createNavButtons("../about/about.html", "episodes.html");
     }
     
-    if (window.location.pathname.endsWith("content/episodes.html")) {
+    if (window.location.pathname.endsWith("content/episodes.html")){
         createNavButtons("characters.html", "fan-art.html");
     }
     
-    if (window.location.pathname.endsWith("content/fan-art.html")) {
+    if (window.location.pathname.endsWith("content/fan-art.html")){
         createNavButtons("episodes.html", "../design/design.html");
     }
     
-    if (window.location.pathname.endsWith("about/about.html")) {
+    if (window.location.pathname.endsWith("about/about.html")){
         createNavButtons("../index.html", "../content/characters.html");
     }
 });

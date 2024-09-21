@@ -11,6 +11,8 @@
 
     <script type="module"> import { initialiseMenu } from "../scripts/all-pages.js"
     initialiseMenu("Characters")</script>
+    
+    <script type="module" src="../scripts/top-button.js"></script>
     <script type="module" src="../scripts/sidebar.js"></script>
     <script type="module" src="../scripts/misc-elements.js"></script>
 
@@ -23,7 +25,6 @@
 </head>
 
 <body>
-    <a id="top"></a>
     <header>
         <div class="logo"><img src="../images/Logo.png" alt="Logo"></div>
 
@@ -171,10 +172,9 @@
     </article>
     </main>
 
-    <div class="button-container">
-        <button class="back-to-top" data-target="#top"><img src="../images/arrow-up.png" class="button" alt="Top"></button>
-        <button id="back" data-target="../about/about.html"><img src="../images/arrow-left.png" class="button" alt="Back"></button>
-        <button id="next" data-target="episodes.html"><img src="../images/arrow-right.png" class="button" alt="Next"></button>
+    <div id="button-container">
+        <button class="back-to-top"><img src="../images/arrow-up.png" class="button" alt="Top"></button>
+        <!--nav buttons added using js-->
     </div>
 
     <footer>
