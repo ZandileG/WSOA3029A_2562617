@@ -49,6 +49,13 @@ h2, h3{
     border: 0.125rem solid black;
 }
 
+.wireframe{
+    width: 36.8rem;
+    height: 58rem;
+    margin-right: 2rem;
+    border: 0.125rem solid black;
+}
+
 .information-structure{
     display: block;
     width: 78rem;
