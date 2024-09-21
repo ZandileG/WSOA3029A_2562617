@@ -50,9 +50,9 @@ h2, h3{
 }
 
 .wireframe{
-    width: 36.8rem;
+    width: 37rem;
     height: 58rem;
-    margin-right: 2rem;
+    margin-right: 1.5rem;
     border: 0.125rem solid black;
 }
 
