@@ -50,9 +50,11 @@ h2, h3{
 }
 
 .wireframe{
-    width: 37rem;
-    height: 58rem;
-    margin-right: 1.5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70rem;
+    height: 50rem;
 }
 
 .information-structure{
