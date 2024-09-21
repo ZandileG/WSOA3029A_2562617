@@ -41,8 +41,8 @@ h2, h3{
 }
 
 .style-guide{
-    width: 55rem;
-    height: 100rem;
+    width: 50rem;
+    height: 95rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -53,28 +53,30 @@ h2, h3{
     width: 37rem;
     height: 58rem;
     margin-right: 1.5rem;
-    border: 0.125rem solid black;
 }
 
 .information-structure{
     display: block;
-    width: 78rem;
-    height: 45rem;
-    border: 0.125rem solid black;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 60rem;
+    height: 40rem;
 }
 
 .user-flow{
     display: block;
-    width: 78rem;
+    margin-left: auto;
+    margin-right: auto;    
+    width: 60rem;
     height: 45rem;
-    border: 0.125rem solid black;
 }
 
 .interaction-points{
     display: block;
-    width: 78rem;
+    margin-left: auto;
+    margin-right: auto; 
+    width: 70rem;
     height: 45rem;
-    border: 0.125rem solid black;
 }
 
 
