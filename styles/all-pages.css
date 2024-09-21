@@ -46,7 +46,7 @@ h1, h2, h3{
 }
 
 .nav ul li a:hover{
-    color: rgb(213, 213, 15);
+    color: rgb(247, 233, 0);
 }
 
 .nav li.active{
@@ -62,9 +62,9 @@ h1, h2, h3{
 footer{
     background-color: rgb(88, 84, 84);
     margin-left: -1rem;
-    margin-right: -1rem;
+    margin-right: -0.5rem;
     margin-bottom: -1rem;
-    font-family: "Quicksand";
+    font-family: "Nunito";
     font-size: 1rem;
 }
 
