@@ -74,10 +74,29 @@ footer p{
     padding-top: 1rem;
 }
 
+footer img{
+    padding-right: 1rem;
+}
+
 .icons{
     margin-left: 48%;
 }
 
 .button-container{
-    margin-left: 46%;
+    margin-left: 48%;
 }
+
+#back, #next, .back-to-top{
+    border-radius: 35%;
+}
+
+#back{
+    margin-right: 1.5rem;
+}
+
+.back-to-top{
+    display: block;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+}
+

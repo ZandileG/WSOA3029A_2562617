@@ -12,11 +12,11 @@ body{
 }
 
 main{
-    margin-left: 7rem;
-    margin-right: 13rem;
+    margin-left: 8rem;
+    margin-right: 15rem;
     margin-top: 2rem;
     font-family: "Nunito";
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 main a{
@@ -55,7 +55,7 @@ main a:hover{
 }
 
 .character-name{
-    padding-left: 2.5rem;
+    padding-left: 12.5%;
     margin-top: 0.5rem;
 }
 

@@ -16,7 +16,7 @@ main{
     margin-right: 5rem;
     margin-top: 2rem;
     font-family: "Nunito";
-    font-size: 1rem;
+    font-size: 1.05rem;
 }
 
 .episode-container{
@@ -28,6 +28,7 @@ main{
 }
 
 video{
+    margin-top: 4rem;
     width: 40rem;
-    height: 28rem;
+    height: 26rem;
 }
