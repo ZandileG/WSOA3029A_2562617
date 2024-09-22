@@ -24,7 +24,7 @@ h1{
 }
 
 h2, h3{
-    margin-top: 2rem;
+    margin-top: 4rem;
 }
 
 /*Styling for the reading progress bar*/
@@ -74,12 +74,7 @@ h2, h3{
 
 .side-by-side{
     display: flex;
-}
-
-figure img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: -4rem;
     margin-bottom: 0.5rem;
 }
 
@@ -90,21 +85,37 @@ figcaption{
 .figure{
     width: 40rem;
     height: 20rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
 .figure1{
     width: 20rem;
     height: 8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
 .figure2{
     width: 30rem;
     height: 8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
 .figure3{
     width: 30rem;
     height: 18rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
 .figure4{
@@ -115,6 +126,10 @@ figcaption{
 .figure5{
     width: 28rem;
     height: 8rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.5rem;
 }
 
 .references{
