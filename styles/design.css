@@ -21,8 +21,10 @@ main{
 
 h2, h3{
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+}
+
+.spacing{
+    margin-top: 4rem;
 }
 
 /*Styling for the reading progress bar*/
