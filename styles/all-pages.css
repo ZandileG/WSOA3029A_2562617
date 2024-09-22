@@ -101,7 +101,7 @@ footer img{
     margin-left: 2rem;
 }
 
-.back-to-top:hover, #back:hover, #next:hover{
+.button img:hover{
     cursor: pointer;
 }
 
