@@ -24,7 +24,7 @@ h2, h3{
 }
 
 .spacing{
-    margin-top: 4rem;
+    margin-top: 5rem;
 }
 
 /*Styling for the reading progress bar*/
@@ -40,6 +40,10 @@ h2, h3{
 #progress-bar {
     height: 100%;
     background-color: rgba(104, 84, 73, 1);
+}
+
+li{
+    padding-bottom: 1.5rem;
 }
 
 .ixd{
@@ -80,7 +84,7 @@ h2, h3{
     display: block;
     margin-left: auto;
     margin-right: auto;    
-    width: 50rem;
+    width: 45rem;
     height: 35rem;
 }
 
