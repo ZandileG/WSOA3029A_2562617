@@ -1,6 +1,6 @@
 header{
     margin-right: -0.5rem;
-    background-color: rgba(104, 84, 73, 1);
+    background-color: rgba(100, 73, 58, 0.947);
 }
 
 .nav ul{
@@ -40,6 +40,15 @@ h2, h3{
     background-color: rgba(104, 84, 73, 1);
 }
 
+.ixd{
+    margin-left: 8rem;
+    margin-right: 8rem;
+}
+
+.subtitle{
+    text-align: center;
+}
+
 .style-guide{
     width: 50rem;
     height: 95rem;
@@ -69,8 +78,8 @@ h2, h3{
     display: block;
     margin-left: auto;
     margin-right: auto;    
-    width: 60rem;
-    height: 45rem;
+    width: 50rem;
+    height: 35rem;
 }
 
 .interaction-points{
