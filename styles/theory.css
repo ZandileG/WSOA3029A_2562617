@@ -62,8 +62,17 @@ h2, h3{
 }
 
 .info{
-    margin-top: 4rem;
     margin-left: 2rem;
+}
+
+.info a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.info a:hover{
+        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
 }
 
 .image{
