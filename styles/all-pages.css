@@ -88,6 +88,7 @@ footer img{
 
 #back, #next, .back-to-top{
     border-radius: 35%;
+    background: white;
 }
 
 #back{
