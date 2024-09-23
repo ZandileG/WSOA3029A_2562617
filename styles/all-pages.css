@@ -101,7 +101,8 @@ footer img{
     margin-left: 2rem;
 }
 
-.button img:hover{
+.back-to-top:hover, #back:hover, #next:hover{
     cursor: pointer;
+    background-color: rgb(247, 233, 0);
 }
 
