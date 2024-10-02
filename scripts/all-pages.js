@@ -37,6 +37,7 @@ export function initialiseMenu (currentPage) {
 };
 
 //Function to create next and back buttons for each page
+//I'm not sure if there is an easier way to do this but this works for now
 function createNavButtons(backTarget, nextTarget){
     const buttonContainer = document.getElementById("button-container");
 
@@ -66,7 +67,7 @@ function createNavButtons(backTarget, nextTarget){
     //Makes the image appear on the button
     nextButton.appendChild(nextImage);
     
-    // Append buttons to the specific button container
+    //Adds these buttons inside the button container in the html pages
     buttonContainer.appendChild(backButton);
     buttonContainer.appendChild(nextButton);
 

@@ -52,8 +52,18 @@
     <video controls><source src="content-videos/Admiral Peralta.mp4" type="video/mp4"/></video>
     </article>
 
-    <h2>Data Visualisations</h2>
-    <section></section>
+    <h2 class="dv">Data Visualisations</h2>
+    <p class="desc">Bubble chart showing the number of episodes in each season of Brooklyn Nine-Nine.</p>
+    
+    <div class="buttons">
+        <button id="combine">Combine</button>
+        <button id="split">Split</button>
+    </div>    
+
+    <section><!--bubble chart added using js--></section>
+
+    <p class="desc">Scatterplot graph showing the ratings that each episode of Brooklyn Nine-Nine got.</p>
+    <div><!--scatterplot graph added using js--></div>
     </article>
     </main>
 
@@ -70,6 +80,7 @@
         <a href="https://www.netflix.com/browse?jbv=70281562" target="_blank"><img src="../images/netflix.png" alt="Netflix Icon"></a>
     </div>
     </footer>   
-    <script src="../scripts/data-visualisations.js"></script>
+    <script type="module" src="../scripts/bubble-chart.js"></script>
+    <script type="module" src="../scripts/scatterplot.js"></script>
 </body>
 </html>
