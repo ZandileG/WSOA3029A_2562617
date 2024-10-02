@@ -27,6 +27,10 @@ h2, h3{
     margin-top: 5rem;
 }
 
+.desc{
+    text-align: center;
+}
+
 /*Styling for the reading progress bar*/
 .progress-container {
     width: 100rem;
@@ -56,11 +60,20 @@ li{
 }
 
 .style-guide{
-    width: 50rem;
-    height: 95rem;
+    width: 45rem;
+    height: 85rem;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    border: 0.125rem solid black;
+}
+
+.home{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70rem;
+    height: 55rem;
     border: 0.125rem solid black;
 }
 
@@ -70,6 +83,7 @@ li{
     margin-right: auto;
     width: 70rem;
     height: 50rem;
+    border: 0.125rem solid black;
 }
 
 .information-structure{
