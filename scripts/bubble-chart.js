@@ -34,7 +34,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
 //Creates the bubble chart
 function createBubbleChart(data) {
 let width = 800;
-let height = 800;
+let height = 780;
 
 //Adds the svg in the section element in my Episodes page
 let svg = d3

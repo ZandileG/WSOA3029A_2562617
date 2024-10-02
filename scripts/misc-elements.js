@@ -50,4 +50,3 @@ const displayMessage = function(){
 };
 
 displayMessage();
-

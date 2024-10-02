@@ -1,4 +1,4 @@
-//Get references to the "X" icon, the burger icon, and the sidebar
+/*//Get references to the "X" icon, the burger icon, and the sidebar
 const closeBtn = document.querySelector(".close-btn");
 const sidebarBtn = document.querySelector(".sidebar-toggle");
 const sidebar = document.querySelector(".show-sidebar");
@@ -10,4 +10,4 @@ closeBtn.addEventListener("click", function(){
 
 sidebarBtn.addEventListener("click", function(){
   sidebar.style.display = "block";
-});
+});*/
