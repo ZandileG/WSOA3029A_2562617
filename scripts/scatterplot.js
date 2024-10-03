@@ -63,7 +63,7 @@ function createGraph(data, totalEpisodes){
 
     //The episodes will be coloured according to their seasons
     let colorScale = d3.scaleOrdinal()
-        .domain([1, 2, 3, 4, 5, 6, 7])
+        .domain([1, 2, 3, 4, 5, 6, 7, 8])
         .range(d3.schemeCategory10);
 
     //Creating the circles  
@@ -109,7 +109,7 @@ function createGraph(data, totalEpisodes){
     }
 
     //Creating the legend
-    const seasons = [1, 2, 3, 4, 5, 6, 7];
+    const seasons = [1, 2, 3, 4, 5, 6, 7, 8];
     svg
     .append("g")
     .selectAll("circle")
