@@ -21,7 +21,7 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
 
 //Makes the object at the top into an array of other objects
 const seasonsData = Object.entries(episodes).map(function([seasonNumber, episodeCount]){
-    return { 
+    return{ 
         season: seasonNumber, 
         count: episodeCount 
         };
@@ -31,8 +31,8 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
     createBubbleChart(seasonsData);
 });
 
-//Creates the bubble chart
-function createBubbleChart(data) {
+//Creating the bubble chart
+function createBubbleChart(data){
 let width = 880;
 let height = 780;
 
@@ -43,7 +43,7 @@ let svg = d3
     .attr("width", width)
     .attr("height", height);
 
-//Create scales
+//Creating the scales
 const sizeScale = d3
     .scaleSqrt()
     .domain([0, d3.max(data, d => d.count)])
@@ -63,7 +63,7 @@ const simulation = d3
     .force("collision", d3.forceCollide(d => sizeScale(d.count)))
     .on("tick", ticked);
 
-//Create circles
+//Creating the circles
 const bubbles = svg
     .selectAll("circle")
     .data(data)
@@ -116,7 +116,7 @@ function removeTooltip(){
 }
 
 //Function to update the bubble positions
-function ticked() {
+function ticked(){
     bubbles
         .attr("cx", d => d.x)
         .attr("cy", d => d.y);
