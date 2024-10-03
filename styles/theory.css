@@ -75,12 +75,12 @@ h2{
     margin-left: 2rem;
 }
 
-.info a, section a{
+.info a, section a, p a{
     text-decoration: none;
     color: rgb(116, 84, 5);
 }
 
-.info a:hover, section a:hover{
+.info a:hover, section a:hover, p a:hover{
         text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
 }
 
