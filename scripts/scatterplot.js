@@ -20,13 +20,13 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
         createGraph(episodes, totalEpisodes);
     });
 
-//Create the graph
+//Creating the graph
 function createGraph(data, totalEpisodes){
     let HEIGHT = 600,
         WIDTH = 600,
         MARGIN = 80;
 
-    //Adds the svg in the div element that has the class graph in my Episodes page
+    //Adding the svg in the div element that has the class graph in my Episodes page
     let svg = d3.select(".graph")
         .append("svg")
         .attr("height", HEIGHT + MARGIN + MARGIN)

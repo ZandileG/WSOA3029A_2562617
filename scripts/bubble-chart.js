@@ -74,7 +74,7 @@ const bubbles = svg
     .attr("fill", d => colorScale(d.count)) 
     .attr("stroke", "black");
 
-//Labels for the bubbles
+//Creating labels for the bubbles
 const labels = svg
     .selectAll("text")
     .data(data)

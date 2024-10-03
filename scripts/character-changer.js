@@ -13,7 +13,6 @@ const quote = document.querySelector(".quote");
 
 //When the page flip button is clicked, the character information will change
 flipButton.addEventListener("click", function(){
-
   characterContainer.classList.add("flip-animation");
 
   characterContainer.addEventListener("animationend", () => {
@@ -28,6 +27,8 @@ flipButton.addEventListener("click", function(){
   occupation.textContent = characters[currentCharacter].occupation;
   personality.textContent = characters[currentCharacter].personality;
   quote.textContent = characters[currentCharacter].quote;
+
+//When the button has been clicked, the update will happen
 }, { once: true }); 
 });
     

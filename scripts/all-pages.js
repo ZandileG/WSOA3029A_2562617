@@ -1,7 +1,7 @@
 //Nav Menu
 const root = "/WSOA3029A_2562617";
 
-//An array of all the menu tabs
+//An array of all the menu items
 const menuItems = [
     { name: "Home", href: root + "/index.html" },
     { name: "About", href: `${root}/about/about.html` },
@@ -13,7 +13,7 @@ const menuItems = [
 ];
 
 //Function for the nav menu
-export function initialiseMenu (currentPage) {
+export function initialiseMenu (currentPage){
     const nav = document.querySelector("header > nav");
     const ul = document.createElement("ul");
     ul.classList.add("menu");
