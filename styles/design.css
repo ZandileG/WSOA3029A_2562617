@@ -19,16 +19,12 @@ main{
     font-size: 1.1rem;
 }
 
-h2, h3{
+h1, h2, h3{
     text-align: center;
 }
 
 .spacing{
     margin-top: 5rem;
-}
-
-.desc{
-    text-align: center;
 }
 
 /*Styling for the reading progress bar*/
@@ -43,20 +39,26 @@ h2, h3{
 
 #progress-bar {
     height: 100%;
-    background-color: rgba(104, 84, 73, 1);
+    background-color: rgb(59, 34, 21);
 }
 
 li{
     padding-bottom: 1.5rem;
 }
 
+li a{
+    text-decoration: none;
+    color: rgb(116, 84, 5);
+}
+
+li a:hover{
+    text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
+}
+
 .ixd{
     margin-left: 8rem;
     margin-right: 8rem;
-}
-
-.subtitle{
-    text-align: center;
+    margin-bottom: 3rem;
 }
 
 .style-guide{

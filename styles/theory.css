@@ -77,8 +77,7 @@ h2{
 
 .info a, section a{
     text-decoration: none;
-    font-weight: bold;
-    color: black;
+    color: rgb(116, 84, 5);
 }
 
 .info a:hover, section a:hover{
