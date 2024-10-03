@@ -32,7 +32,17 @@ main{
 
 #Start{
     text-align: center;
-}
+    animation: glow 1s infinite alternate;
+  }
+  
+  @keyframes glow{
+    from {
+        text-shadow: 0 0 5px #f1f37b, 0 0 10px #f1f37b;
+    }
+    to {
+        text-shadow: 0 0 15px #f1f4ae, 0 0 20px #f1f4ae;
+    }
+  } 
 
 #Start a{
     text-decoration: none;
@@ -42,3 +52,4 @@ main{
 #Start a:hover{
     color: rgb(142, 142, 142);
 }
+

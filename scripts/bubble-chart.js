@@ -33,7 +33,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
 
 //Creates the bubble chart
 function createBubbleChart(data) {
-let width = 800;
+let width = 880;
 let height = 780;
 
 //Adds the svg in the section element in my Episodes page
@@ -92,7 +92,7 @@ let tooltip = d3.select("section")
                 .append("div")
                 .style("color", "black")
                 .style("font-weight", "bold")
-                .style("background-color", "white")
+                .style("background-color", "rgb(236, 226, 226)")
                 .style("padding", "0.5rem")
                 .style("border-radius", "10%")
                 .style("border", "1px solid black")

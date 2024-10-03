@@ -75,8 +75,21 @@ footer p{
 }
 
 footer img{
-    padding-right: 1rem;
+    margin-right: 1rem;
 }
+
+footer img:hover{
+        animation: glow 1s infinite alternate;
+      }
+      
+      @keyframes glow{
+        from{
+          box-shadow: 0 0 10px -10px #ffffff;
+        }
+        to{
+          box-shadow: 0 0 10px 10px #ffffff;
+        }
+      }
 
 .icons{
     margin-left: 48%;

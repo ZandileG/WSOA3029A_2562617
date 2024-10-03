@@ -35,20 +35,6 @@ main a:hover{
 
 .character-image{
     width: 25rem;
-    height: 24rem;
-    border: 0.125rem solid black;
-    margin-bottom: 2rem;
-}
-
-.character-image1{
-    width: 25rem;
-    height: 29rem;
-    border: 0.125rem solid black;
-    margin-bottom: 2rem;
-}
-
-.character-image2{
-    width: 25rem;
     height: 25rem;
     border: 0.125rem solid black;
     margin-bottom: 2rem;
@@ -80,6 +66,22 @@ section{
     border: none;
     margin-top: 21.5rem;
 }
+
+/*The corner arrow will glow once to show the user that they can click it.*/
+.corner{
+    border-radius: 10px;
+    animation: glow 1s alternate;
+    animation-iteration-count: 5;
+  }
+  
+  @keyframes glow{
+    from{
+      box-shadow: 0 0 10px -10px #f1f37b;
+    }
+    to{
+      box-shadow: 0 0 10px 10px #f1f4ae;
+    }
+  }
 
 .corner-img{
     width: 5rem;
