@@ -80,10 +80,6 @@ h2{
     color: rgb(116, 84, 5);
 }
 
-.info a:hover, section a:hover, p a:hover{
-        text-shadow: 0 0 5px #ffffff, 0 0 10px #ffffff, 0 0 15px #ffffff;
-}
-
 .image{
     width: 32rem;
     height: 16rem;
