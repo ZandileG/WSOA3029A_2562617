@@ -54,9 +54,18 @@ h2{
     border: 0.125rem solid black;
 }
 
-.essay{
+.reflection{
     margin-left: 8rem;
     margin-right: 8rem;
+}
+
+.essay{
+    margin-left: 3rem;
+    margin-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: white;
+    border: 0.125rem solid black;
 }
 
 .heading{
@@ -76,7 +85,6 @@ h2{
 }
 
 .info a, section a, p a{
-    text-decoration: none;
     color: rgb(116, 84, 5);
 }
 
@@ -135,6 +143,9 @@ figcaption{
 .figure4{
     width: 30rem;
     height: 17rem;
+    display: block;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
 }
 
 .figure5{
