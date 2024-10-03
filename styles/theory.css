@@ -31,7 +31,6 @@ h2{
     margin-top: 2rem;
 }
 
-/*Styling for the reading progress bar*/
 .progress-container {
     width: 100rem;
     height: 0.5rem;
@@ -164,4 +163,7 @@ figcaption{
 .references li{
     margin-bottom: 1rem;
 }
+
+/*Responsive Design*/
+
 

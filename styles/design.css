@@ -27,7 +27,6 @@ h1, h2, h3{
     margin-top: 5rem;
 }
 
-/*Styling for the reading progress bar*/
 .progress-container {
     width: 100rem;
     height: 0.5rem;
@@ -100,6 +99,7 @@ li a{
     height: 35rem;
 }
 
+/*Responsive Design*/
 
 
 
