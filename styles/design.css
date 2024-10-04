@@ -19,6 +19,13 @@ main{
     font-size: 1.1rem;
 }
 
+.menu{
+    display: none;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
 h1, h2, h3{
     text-align: center;
 }
@@ -101,18 +108,30 @@ li a{
 
 /*Responsive Design*/
 @media (max-width: 500px){
-    .nav ul{
+    .menu{
+        display: block;
+        margin-left: 24.5rem;
+    }
+
+    .close{
         display: none;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav ul{
         flex-direction: column;
-        margin-right: 30%;
+        margin-right: 31%;
         margin-top: 0;
         gap: 1.5rem;
         padding-top: 5rem;
         padding-left: 5rem;
         padding-right: 5rem;
         padding-bottom: 14.25rem;
-        background-color: rgba(104, 84, 73, 1);
-        border-right: 1px solid white;
+        background-color: rgb(111, 82, 66);
+        border-right: 3px solid black;
     }
 }
 

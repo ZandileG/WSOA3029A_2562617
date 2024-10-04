@@ -119,19 +119,11 @@ footer img:hover{
 }
 
 /*Responsive Design*/
-@media (min-width: 500px){
-    .menu{
-        display: block;
-        margin-left: 24.5rem;
-    }
-
-    .close{
-        display: none;
-    }
+@media (min-width: 500px){    
+    
 }
 
 @media (max-width: 768px){
-
     header img{
         display: block;
         margin-top: 1rem;
@@ -142,7 +134,12 @@ footer img:hover{
     .nav ul{
         margin-top: 13rem;
         font-size: 1rem;
-        right: 4rem;
+        right: 3rem;
     }
 }
 
+@media (min-width: 768px){
+    .nav ul{
+        width: 42rem;
+    }
+}

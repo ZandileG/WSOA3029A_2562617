@@ -110,7 +110,7 @@ footer img:hover{
 
 @media (max-width: 768px){
     body{
-        background-image: url("../images/Responsive.jpg");
+        background-image: url("../images/Responsive 2.jpg");
     }
 
     footer{
@@ -118,6 +118,6 @@ footer img:hover{
     }
 
     #Message{
-        margin-top: 7rem;
+        margin-top: 9rem;
     }
 }
