@@ -15,6 +15,13 @@ main{
     font-weight: bold;
 }
 
+.menu{
+    display: none;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+}
+
 #Start{
     text-align: center;
     animation: glow 1s infinite alternate;
@@ -40,7 +47,7 @@ main{
 
 footer{
     background-color: white;
-    margin-top: 75%;
+    margin-top: 65%;
     height: 10rem;
     display: none;
 }
@@ -61,11 +68,39 @@ footer img:hover{
       box-shadow: 0 0 10px 10px #ffffff;
     }
   }
-  
+
 /*Responsive Design*/
-@media (max-width: 457px){
+@media (max-width: 500px){
     footer{
         display: block;
+        height: 8rem;
+    }
+
+    .nav{
+        display: none;
+    }
+
+    .nav ul{
+        flex-direction: column;
+        margin-right: 30%;
+        margin-top: 0;
+        gap: 1.5rem;
+        padding-top: 5rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        padding-bottom: 14.25rem;
+        background-color: rgb(15, 42, 61);
+        border-right: 1px solid white;
+    }
+
+    #Message{
+        margin-bottom: 10rem;
+        font-size: 1rem;
+    }
+
+    .menu{
+        display: block;
+        margin-left: 24.5rem;
     }
 }
 
@@ -76,5 +111,9 @@ footer img:hover{
 
     footer{
         display: block;
+    }
+
+    #Message{
+        margin-top: 7rem;
     }
 }

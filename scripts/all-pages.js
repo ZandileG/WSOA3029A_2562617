@@ -109,4 +109,12 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
+//The sidebar opens when the menu button is clicked
+const menuBtn = document.querySelector(".menu");
+const nav = document.querySelector(".nav");
+
+menuBtn.addEventListener("click", function(){
+  nav.style.display = "block";
+});
+
 
