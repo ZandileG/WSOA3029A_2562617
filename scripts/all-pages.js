@@ -109,12 +109,22 @@ document.addEventListener("DOMContentLoaded", function(){
     }
 });
 
-//The sidebar opens when the menu button is clicked
-const menuBtn = document.querySelector(".menu");
-const nav = document.querySelector(".nav");
+//The menu opens when the open button is clicked and it closes when the close button is clicked
+document.querySelector(".menu").addEventListener("click", function() {
+    const nav = document.querySelector(".nav");
+    const closeButton = document.querySelector(".close");
+    const openButton = document.querySelector(".open");
 
-menuBtn.addEventListener("click", function(){
-  nav.style.display = "block";
+    if (nav.style.display === "block") {
+        nav.style.display = "none";
+        closeButton.style.display = "none";
+        openButton.style.display = "block";
+    } else {
+        nav.style.display = "block";
+        closeButton.style.display = "block";
+        openButton.style.display = "none";
+    }
 });
+
 
 

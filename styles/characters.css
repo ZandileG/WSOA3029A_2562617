@@ -118,11 +118,6 @@ section{
   
   /*Responsive Design*/
   @media (max-width: 500px){
-    footer{
-        display: block;
-        height: 8rem;
-    }
-
     .nav ul{
         display: none;
         flex-direction: column;
@@ -135,16 +130,6 @@ section{
         padding-bottom: 14.25rem;
         background-color: rgba(104, 84, 73, 1);
         border-right: 1px solid white;
-    }
-
-    #Message{
-        margin-bottom: 10rem;
-        font-size: 1rem;
-    }
-
-    .menu{
-        display: block;
-        margin-left: 24.5rem;
     }
 }
 

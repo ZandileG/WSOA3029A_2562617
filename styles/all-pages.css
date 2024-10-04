@@ -120,6 +120,14 @@ footer img:hover{
 
 /*Responsive Design*/
 @media (min-width: 500px){
+    .menu{
+        display: block;
+        margin-left: 24.5rem;
+    }
+
+    .close{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){

@@ -102,6 +102,10 @@ footer img:hover{
         display: block;
         margin-left: 24.5rem;
     }
+
+    .close{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
