@@ -3,21 +3,6 @@ body{
     background-size: cover;
 }
 
-section{
-    display: flex;
-    gap: 1rem;
-}
-
-.home-image{
-    width: 45rem;
-    height: 30rem;
-}
-
-.home-image1{
-    width: 91rem;
-    height: 55rem;
-}
-
 main{
     font-family: "Nunito";
     font-size: 1.15rem;
@@ -53,9 +38,43 @@ main{
     color: rgb(142, 142, 142);
 }
 
-/*Responsive Design*/
-@media (max-width: 420px){
+footer{
+    background-color: white;
+    margin-top: 75%;
+    height: 10rem;
+    display: none;
 }
 
-@media (max-width: 834px){
+footer p{
+    color: black;
+}
+
+footer img:hover{
+    animation: glow2 1s infinite alternate;
+  }
+  
+  @keyframes glow2{
+    from{
+      box-shadow: 0 0 10px -10px #ffffff;
+    }
+    to{
+      box-shadow: 0 0 10px 10px #ffffff;
+    }
+  }
+  
+/*Responsive Design*/
+@media (max-width: 457px){
+    footer{
+        display: block;
+    }
+}
+
+@media (max-width: 768px){
+    body{
+        background-image: url("../images/Responsive.jpg");
+    }
+
+    footer{
+        display: block;
+    }
 }
