@@ -1,3 +1,4 @@
+//Get the data for the character information that will appear on the Characters page 
 import { characters } from "./characters.js";
 let currentCharacter = 0;
 
@@ -18,7 +19,7 @@ flipButton.addEventListener("click", function(){
   characterContainer.addEventListener("animationend", () => {
   characterContainer.classList.remove("flip-animation");
 
-//Updates the text using the data from the characters script
+//Updates the text using the data from the characters.js script
   currentCharacter = (currentCharacter + 1) % characters.length;
 
   characterName.textContent = characters[currentCharacter].name;

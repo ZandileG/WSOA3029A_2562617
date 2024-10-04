@@ -77,6 +77,8 @@ footer img{
 }
 
 /*The icons in the footer will glow when the user hovers over them*/
+/*I got the glowing code and modified it from Stack Overflow: 
+https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow*/
 footer img:hover{
         animation: glow 1s infinite alternate;
       }

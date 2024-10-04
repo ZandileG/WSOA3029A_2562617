@@ -1,3 +1,4 @@
+//I used the menu code from my Semester 1 website. We were given a tutorial in class by Hanli for how to do it.
 //Nav Menu
 const root = "/WSOA3029A_2562617";
 
@@ -37,7 +38,7 @@ export function initialiseMenu (currentPage){
 };
 
 //Function to create next and back buttons for each page
-//I'm not sure if there is an easier way to do this but this works for now
+//I'm not sure if there is an easier way to do this cause I wrote a lot of lines of code but I'm glad it works
 function createNavButtons(backTarget, nextTarget){
     const buttonContainer = document.getElementById("button-container");
 
