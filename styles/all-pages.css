@@ -140,6 +140,8 @@ footer img:hover{
 
 @media (min-width: 768px){
     .nav ul{
-        width: 42rem;
+        width: 50rem;
     }
 }
+
+
