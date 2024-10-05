@@ -77,10 +77,6 @@ section{
         width: 23rem;
         height: 13.5rem;
     }
-
-    header{
-        height: 15rem;
-    }
 }
 
 @media (max-width: 768px){

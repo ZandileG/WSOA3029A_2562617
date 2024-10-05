@@ -92,11 +92,7 @@ footer img:hover{
         }
       }
 
-.icons{
-    margin-left: 48%;
-}
-
-#button-container{
+#button-container, .icons{
     margin-left: 48%;
 }
 
@@ -137,6 +133,10 @@ footer img:hover{
         margin-top: 13rem;
         font-size: 1rem;
         right: 3rem;
+    }
+
+    #button-container, .icons{
+        margin-left: 42%;
     }
 }
 
