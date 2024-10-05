@@ -64,7 +64,7 @@ export const characters = [
 {
     name: "Rosa Diaz",
     image: "content-images/Rosa.png",
-    portrayedBy: "Melissa Fumero",
+    portrayedBy: "Stephanie Beatriz",
     occupation: "Detective",
     personality: `Rosa is pretty chilled character. She likes being by herself and minding her own business and it's sometimes hard for her to 
                   trust people. Rosa is also a bisexual character and after she comes out she becomes more open around her friends and family. In 
