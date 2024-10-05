@@ -198,6 +198,10 @@ figcaption{
         background-color: rgb(111, 82, 66);
         border-right: 3px solid black;
     }
+
+    header{
+        height: 15rem;
+      }
 }
 
 @media (max-width: 768px){

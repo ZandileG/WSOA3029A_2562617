@@ -72,10 +72,28 @@ section{
         background-color: rgb(111, 82, 66);
         border-right: 3px solid black;
     }
+
+    .about-image{
+        width: 23rem;
+        height: 13.5rem;
+    }
+
+    header{
+        height: 15rem;
+    }
 }
 
 @media (max-width: 768px){
+    
     header{
         height: 20rem;
+    }
+
+    section{
+        display: block;
+    }
+
+    .about-image{
+        margin-left: 1rem;
     }
 }
