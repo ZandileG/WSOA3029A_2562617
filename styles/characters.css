@@ -125,7 +125,8 @@ https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow*/
     }
   }
   
-  /*Responsive Design*/
+/*Responsive Design - I included these designs in my wireframes
+  My chosen screen sizes are: 457 x 815 for Mobile, 768 x 1024 for Tablet, and 1920 x 1080 for Desktop*/
   @media (max-width: 500px){
     .menu{
       display: block;
@@ -151,11 +152,50 @@ https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow*/
       padding-bottom: 14.25rem;
       background-color: rgb(111, 82, 66);
       border-right: 3px solid black;
+      position: absolute;
+      z-index: 1;
   }
+
+  .character{
+    margin-left: -11rem;
+    position: relative;
+  }
+
+  .character-image{
+    width: 20rem;
+    height: 20rem;
+    margin-left: 4.5rem;
+  }
+
+  #button-container, .icons{
+    margin-left: 35%;
+}
 }
 
   @media (max-width: 768px){
     header{
       height: 20rem;
+    }
+
+    section{
+      display: block;
+    }
+
+    .character{
+      width: 31rem;
+    }
+
+    .character-name{
+      padding-left: 35%;
+    }
+
+    .character-info{
+      margin-left: -1rem;
+      margin-right: 3rem;
+    }
+
+    .corner{
+      margin-top: 0;
+      margin-left: 10rem;
     }
   }
