@@ -34,7 +34,7 @@ h1, h2, h3{
     margin-top: 5rem;
 }
 
-.progress-container {
+.progress-container{
     width: 100rem;
     height: 0.5rem;
     margin-left: -3rem;
@@ -43,7 +43,7 @@ h1, h2, h3{
     z-index: 99;
 }
 
-#progress-bar {
+#progress-bar{
     height: 100%;
     background-color: rgba(104, 84, 73, 1);
 }
