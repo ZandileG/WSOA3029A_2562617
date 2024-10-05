@@ -137,4 +137,15 @@ main{
     header{
         height: 20rem;
     }
+
+    .art{
+        display: block;
+    }
+
+    .art img{
+        width: 100%;
+        height: 100%;
+        margin-left: 0rem;
+    }
+
 }
