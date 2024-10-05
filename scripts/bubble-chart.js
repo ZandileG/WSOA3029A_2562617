@@ -36,7 +36,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
 
 //Creating the bubble chart
 function createBubbleChart(data){
-let width = 880;
+let width = 800;
 let height = 780;
 
 //Adds the svg in the section element in my Episodes page
@@ -50,7 +50,7 @@ let svg = d3
 const sizeScale = d3
     .scaleSqrt()
     .domain([0, d3.max(data, d => d.count)])
-    .range([10, 80]);
+    .range([10, 75]);
 
 //Colour scale to make the seasons with the same episode count the same colour
 const colorScale = d3

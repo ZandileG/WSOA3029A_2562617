@@ -120,10 +120,73 @@ text{
         background-color: rgb(111, 82, 66);
         border-right: 3px solid black;
     }
+
+    video{
+        margin-top: 0rem;
+        width: 25rem;
+        height: 15rem;
+    }
+
+    .paragraphs{
+        margin-left: -3rem;
+    }
+
+    article p{
+        width: 22rem;
+    }
+
+    .episode-container{
+        margin-left: -2rem;
+    }
+
+    .dv, .desc, section, .graph{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
     header{
         height: 20rem;
+    }
+
+    .episode-container{
+        display: block;
+    }
+
+    .graph{        
+        margin-left: -1.5rem;
+        width: 45rem;
+        height: 50rem;
+    }
+
+    section{
+        margin-left: -5rem;
+        height: 50rem;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+    }
+
+    section svg{
+        width: 50rem;
+    }
+    
+    .graph svg{
+        width: 45rem;
+    }
+
+    video{
+        margin-left: 1rem;
+    }
+
+    main{
+        margin-left: 2rem;
+    }
+
+    article p{
+        margin-left: 6rem;
+    }
+
+    article h2, .episode-title{
+        text-align: center;
     }
 }
