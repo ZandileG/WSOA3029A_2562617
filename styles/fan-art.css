@@ -103,8 +103,9 @@ main{
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
 }
 
-/*Responsive Design*/
-@media (max-width: 500px){
+/*Responsive Design - I included these designs in my wireframes
+  My chosen screen sizes are: 457 x 815 for Mobile, 768 x 1024 for Tablet, and 1920 x 1080 for Desktop*/
+  @media (max-width: 500px){
     .menu{
         display: block;
         margin-left: 24.5rem;
