@@ -21,11 +21,19 @@ h1{
     font-size: 2rem;
 }
 
+h2{
+    margin-top: 4rem;
+}
+
 .menu{
     display: none;
     padding-bottom: 0.75rem;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
+}
+
+.desc{
+    text-align: center;
 }
 
 .nav ul{
@@ -53,6 +61,47 @@ p{
     margin-left: 5rem;
     line-height: 1.75rem;
     padding-bottom: 1rem;
+}
+
+.contact{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 12rem;
+    text-align: justify;
+    width: 50rem;
+}
+
+textarea{
+    font-family: "Nunito";
+    font-size: 1rem;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    width: 97%;
+    height: 10rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 0.125rem solid black;
+    border-radius: 0.4rem;
+    resize: vertical;
+}
+
+.submit{
+    width: 100%;
+    padding: 0.75rem;
+    background-color: rgb(142, 142, 142);
+    border: solid black;
+    border-radius: 0.4rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.submit:hover{
+    background-color: rgb(247, 233, 0);
+}
+
+#responseMessage{
+    margin-top: 1rem;
+    margin-left: 38%;
 }
 
 /*Responsive Design - I included these designs in my wireframes
