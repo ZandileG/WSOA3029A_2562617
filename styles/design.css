@@ -71,6 +71,12 @@ li a{
     margin-bottom: 3rem;
 }
 
+.small{
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-bottom: 4rem;
+}
+
 .style-guide{
     width: 45rem;
     height: 85rem;
