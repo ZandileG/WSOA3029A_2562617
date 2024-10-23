@@ -1,4 +1,3 @@
-//I used the menu code from my Semester 1 website. We were given a tutorial in class by Hanli for how to do it.
 //Nav Menu
 const root = "/WSOA3029A_2562617";
 
