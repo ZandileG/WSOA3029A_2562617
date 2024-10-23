@@ -45,65 +45,62 @@ main{
 .image1{
     width: 45rem;
     height: 25rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
-    margin-left: 8rem;
 }
 
 .image2{
     width: 20rem;
-    height: 25rem;
+    height: 27rem;
+    margin-left: 18.5rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
 }
 
 .image3{
-    width: 25rem;
-    height: 35rem;
+    width: 23rem;
+    height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
 }
 
 .image4{
     width: 40rem;
-    height: 35rem;
+    height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
-    margin-left: 8rem;
+    margin-left: 23rem;
 }
 
 .image5{
-    width: 25rem;
-    height: 35rem;
+    margin-left: 16.5rem;
+}
+
+.image5, .image7{
+    width: 24rem;
+    height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
-    margin-left: 13rem;
 }
 
 .image6{
-    width: 30rem;
-    height: 35rem;
-    box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
-}
-
-.image7{
-    width: 30rem;
+    width: 25rem;
     height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
-    margin-left: 13rem;
+    margin-left: 16rem;
 }
 
 .image8{
     width: 25rem;
-    height: 30rem;
+    height: 27rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
 }
 
 .image9{
-    width: 30rem;
-    height: 35rem;
-    box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
-    margin-left: 10rem;
+    margin-left: 16rem;
 }
 
-.image10{
-    width: 30rem;
-    height: 35rem;
+.image9, .image10{
+    width: 25rem;
+    height: 28rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
 }
 
