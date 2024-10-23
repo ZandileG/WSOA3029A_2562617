@@ -51,6 +51,7 @@ main{
 video{
     width: 35rem;
     height: 20rem;
+    border-radius: 0.5rem;
 }
 
 .dv{
@@ -90,6 +91,7 @@ section, .graph{
     margin-left: 10rem;
     margin-right: 10rem;
     margin-bottom: 5rem;
+    border-radius: 0.4rem;
 }
 
 svg{

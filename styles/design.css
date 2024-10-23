@@ -78,6 +78,7 @@ li a{
     margin-left: auto;
     margin-right: auto;
     border: 0.125rem solid black;
+    border-radius: 0.4rem;
 }
 
 .planning{
@@ -86,6 +87,7 @@ li a{
     margin-left: 6rem;
     margin-right: 8rem;
     border: 0.125rem solid black;
+    border-radius: 0.4rem;
 }
 
 .home{
@@ -95,6 +97,7 @@ li a{
     width: 70rem;
     height: 55rem;
     border: 0.125rem solid black;
+    border-radius: 0.4rem;
 }
 
 .wireframe{
@@ -104,6 +107,7 @@ li a{
     width: 70rem;
     height: 50rem;
     border: 0.125rem solid black;
+    border-radius: 0.4rem;
 }
 
 .information-structure{

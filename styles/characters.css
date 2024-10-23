@@ -49,10 +49,11 @@ main a:hover{
     height: 25rem;
     border: 0.125rem solid black;
     margin-bottom: 2rem;
+    border-radius: 0.4rem;
 }
 
 .character-name{
-    padding-left: 15%;
+    padding-left: 13%;
     margin-top: 0.5rem;
 }
 
@@ -69,6 +70,7 @@ section{
     border: 0.125rem solid black;
     padding-top: 2rem;
     padding-left: 2rem;
+    border-radius: 0.4rem;
 }
 
 .info{

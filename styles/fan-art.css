@@ -49,6 +49,7 @@ main{
     margin-left: auto;
     margin-right: auto;  
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
+    border-radius: 0.4rem;
 }
 
 .image2{
@@ -56,12 +57,14 @@ main{
     height: 27rem;
     margin-left: 18.5rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
+    border-radius: 0.4rem;
 }
 
 .image3{
     width: 23rem;
     height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
+    border-radius: 0.4rem;
 }
 
 .image4{
@@ -69,6 +72,7 @@ main{
     height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
     margin-left: 23rem;
+    border-radius: 0.4rem;
 }
 
 .image5{
@@ -79,6 +83,7 @@ main{
     width: 24rem;
     height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
+    border-radius: 0.4rem;
 }
 
 .image6{
@@ -86,12 +91,14 @@ main{
     height: 30rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
     margin-left: 17rem;
+    border-radius: 0.4rem;
 }
 
 .image8{
     width: 25rem;
     height: 27rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
+    border-radius: 0.4rem;
 }
 
 .image9{
@@ -102,6 +109,7 @@ main{
     width: 25rem;
     height: 28rem;
     box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
+    border-radius: 0.4rem;
 }
 
 /*Responsive Design - I included these designs in my wireframes
