@@ -1,11 +1,11 @@
 //Reading progress bar 
 /*As the reader scrolls through the page, the progress bar will move up.
   When the reader is done scrolling, the bar will be full and when they scroll up, it will move back.*/
-  window.onscroll = function() { 
+  window.onscroll = function(){ 
     updateProgressBar() 
   };
 
-  function updateProgressBar() {
+  function updateProgressBar(){
       var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
       var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       var scrolled = (winScroll / height) * 100;
@@ -17,12 +17,12 @@
 const images = document.querySelectorAll(".image");
 
 images.forEach(image => {
-    image.addEventListener("mouseenter", function() {
+    image.addEventListener("mouseenter", function(){
         this.style.transform = "scale(1.1)";
         this.style.transition = "transform 0.2s";
     });
 
-    image.addEventListener("mouseleave", function() {
+    image.addEventListener("mouseleave", function(){
         this.style.transform = "scale(1)";
         this.style.transition = "transform 0.2s";
     });

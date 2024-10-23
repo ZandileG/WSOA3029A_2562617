@@ -97,22 +97,19 @@ footer img:hover{
     margin-left: 48%;
 }
 
-#back, #next, .back-to-top{
+.back-to-top{
     border-radius: 35%;
     background: white;
 }
 
-#back{
-    margin-right: 1.5rem;
-}
-
 .back-to-top{
-    display: block;
-    margin-bottom: 2rem;
-    margin-left: 2rem;
+  display: none; 
+  position: fixed; 
+  bottom: 6rem; 
+  right: 3rem; 
 }
 
-.back-to-top:hover, #back:hover, #next:hover{
+.back-to-top:hover{
     cursor: pointer;
     background-color: rgb(247, 233, 0);
 }
