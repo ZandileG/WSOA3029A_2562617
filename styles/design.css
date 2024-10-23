@@ -34,6 +34,10 @@ h1{
     font-size: 2rem;
 }
 
+.desc{
+    text-align: center;
+}
+
 .heading{
     margin-top: 4rem;
 }
@@ -110,6 +114,7 @@ li a{
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 2rem;
     width: 70rem;
     height: 50rem;
     border: 0.125rem solid black;
