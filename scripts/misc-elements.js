@@ -1,16 +1,41 @@
 //Reading progress bar 
 /*As the reader scrolls through the page, the progress bar will move up.
   When the reader is done scrolling, the bar will be full and when they scroll up, it will move back.*/
-  window.onscroll = function(){ 
-    updateProgressBar() 
-  };
+  document.addEventListener("DOMContentLoaded", function(){
+    
+    //Runs the function
+    window.onscroll = function(){ 
+        updateProgressBar(); 
+        scrollFunction(); 
+    };
 
-  function updateProgressBar(){
-      var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-      var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-      var scrolled = (winScroll / height) * 100;
-      document.getElementById("progress-bar").style.width = scrolled + "%";
-  };
+    //Functionality for the progress bar 
+    function updateProgressBar(){
+        let winScroll = window.pageYOffset || document.documentElement.scrollTop;
+        let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        let scrolled = (winScroll / height) * 100;
+        document.getElementById("progress-bar").style.width = scrolled + "%";
+    }
+
+    //Functionality for the Back to top button 
+    let topBtn = document.querySelector(".back-to-top");
+
+    function scrollFunction(){
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20){
+            topBtn.style.display = "block";
+        } 
+        else{
+            topBtn.style.display = "none";
+        }
+    }
+
+    topBtn.addEventListener("click", function(){
+        window.scrollTo({ 
+            top: 0, 
+            behavior: "smooth" 
+        });
+    });
+});
 
 //Animate images 
 //Changes the scale of the image for 0.2seconds when the user hovers over the image and goes back when they are not hovering
