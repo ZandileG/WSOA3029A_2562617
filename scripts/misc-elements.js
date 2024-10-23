@@ -33,8 +33,7 @@ images.forEach(image => {
 const messages = [
   "Welcome to my fan website for Brooklyn Nine-Nine!",
   "I hope you enjoy the content I am bringing to you.",
-  "Are you ready to become a new member of the 99th precinct?",
-  `<p id="Start"><a href="/WSOA3029A_2562617/about/about.html">Start</a></p>`
+  "Are you ready to become a new member of the 99th precinct?"
 ];
 
 let index = 0;

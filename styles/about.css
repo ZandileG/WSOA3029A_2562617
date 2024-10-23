@@ -10,9 +10,14 @@ body{
 main{
     font-family: "Nunito";
     font-size: 1rem;
-    margin-left: 1.25rem;
-    margin-right: 2rem;
+    margin-left: 8rem;
+    margin-right: 8rem;
     margin-top: 2rem;
+}
+
+h1{
+    text-align: center;
+    margin-top: 2.5rem;
 }
 
 .menu{
@@ -26,23 +31,26 @@ main{
     top: 2rem
 }
 
-section{
-    display: flex;
-}
-
 .about-info{
-    padding-left: 2rem;
-}
-
-.about-info2{
-    padding-left: 2rem;
+    margin-top: 3rem;
 }
 
 .about-image{
-    width: 42rem;
-    height: 27rem;
+    width: 35rem;
+    height: 20rem;
     margin-top: 1rem;
+    display: block;
     border: 0.125rem solid black;
+}
+
+section{
+    display:flex
+}
+
+p{
+    margin-left: 5rem;
+    line-height: 1.75rem;
+    padding-bottom: 1rem;
 }
 
 /*Responsive Design - I included these designs in my wireframes
