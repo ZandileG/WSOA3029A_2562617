@@ -44,13 +44,13 @@ h1, h2, h3{
 }
 
 .nav ul li a:hover{
-    color: rgb(247, 233, 0);
+    color: rgb(142, 142, 142);
 }
 
 .nav li.active{
     font-weight: bold;
     cursor: default;
-    color: rgb(142, 142, 142);
+    color: rgb(247, 233, 0);
 }
 
 .nav li.active:hover{

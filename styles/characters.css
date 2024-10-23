@@ -11,9 +11,13 @@ body{
     background-color: rgb(236, 226, 226);
 }
 
+h1{
+  text-align: center;
+}
+
 main{
-    margin-left: 8rem;
-    margin-right: 14rem;
+    margin-left: 10rem;
+    margin-right: 10rem;
     margin-top: 2rem;
     font-family: "Nunito";
     font-size: 1.05rem;
@@ -48,7 +52,7 @@ main a:hover{
 }
 
 .character-name{
-    padding-left: 12.5%;
+    padding-left: 15%;
     margin-top: 0.5rem;
 }
 
@@ -61,11 +65,14 @@ main a:hover{
 }
 
 section{
-    display: flex;
     background-color: white;
     border: 0.125rem solid black;
     padding-top: 2rem;
     padding-left: 2rem;
+}
+
+.info{
+  display: flex;
 }
 
 .corner{
