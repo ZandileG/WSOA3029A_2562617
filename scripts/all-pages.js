@@ -52,8 +52,3 @@ document.querySelector(".menu").addEventListener("click", function() {
         openButton.style.display = "none";
     }
 });
-
-
-
-
-

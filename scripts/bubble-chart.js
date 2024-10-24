@@ -141,4 +141,3 @@ function ticked(){
         simulation.alpha(1).restart(); 
     });
 }
-

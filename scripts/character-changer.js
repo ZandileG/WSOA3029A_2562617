@@ -32,4 +32,3 @@ flipButton.addEventListener("click", function(){
 //When the button has been clicked, the update will happen
 }, { once: true }); 
 });
-    
