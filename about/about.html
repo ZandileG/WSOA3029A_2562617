@@ -60,11 +60,30 @@
         <h2 class="desc">Newsletter</h2>
         <p class="desc">Subscribe to my newsletter to get updates for any Brooklyn Nine-Nine news.</p>
         <div class="contact">
+            <img class="about-image2" src="about-images/Poster 4.jpg" alt="Brooklyn Nine-Nine Poster">
+            <div>
             <form id="contactForm">
-                <textarea id="contactMessage" name="contactMessage" rows="4" placeholder="Write your message here..."></textarea>
+                <p id="errorMessage"></p>
+                <p id="successMessage"></p>
+                <h4 class="heading">Name:</h4>
+                <textarea id="name" name="name" rows="1" placeholder="Enter your name..."></textarea>
+                
+                <h4>Email:</h4>
+                <textarea id="email" name="email" rows="1" placeholder="Enter your email..."></textarea>
+                
+                <h4>Phone Number:</h4>
+                <textarea id="number" name="number" rows="1" placeholder="Enter your number..."></textarea>
+                
+                <h4>Create Password:</h4>
+                <textarea id="password" name="password" rows="1" placeholder="Enter your password..."></textarea>
+                <button type="button" class="save" onclick="submitForm()">Save</button>
+
+                <h4 class="heading">Write me a message:</h4>
+                <textarea id="message" name="message" rows="1" placeholder="Enter your message..."></textarea>
                 <button type="button" class="submit" onclick="submitForm()">Submit</button>
+                <p id="responseMessage"></p>
             </form>
-            <p id="responseMessage"></p>
+            </div>
         </div>
 </main>
 

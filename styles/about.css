@@ -23,6 +23,15 @@ h1{
 
 h2{
     margin-top: 4rem;
+    margin-left: 3rem;
+}
+
+h4{
+    margin-left: 4rem;
+}
+
+.heading{
+    margin-top: 2rem;
 }
 
 .menu{
@@ -34,6 +43,7 @@ h2{
 
 .desc{
     text-align: center;
+    margin-left: 2rem;
 }
 
 .nav ul{
@@ -53,55 +63,75 @@ h2{
     border-radius: 0.4rem;
 }
 
+.about-image2{
+    width: 35rem;
+    height: 55rem;
+    border-radius: 0.4rem;
+    border-right: 0.125rem solid black;
+}
+
 section{
     display:flex
 }
 
-p{
+section p{
     margin-left: 5rem;
     line-height: 1.75rem;
     padding-bottom: 1rem;
 }
 
 .contact{
-    padding-left: 3rem;
-    padding-right: 3rem;
-    margin-left: 12rem;
+    display: flex;
     text-align: justify;
-    width: 50rem;
+    width: 54rem;   
+    margin-left: 13rem;
+    background-color: white;
+    border: 0.125rem solid black;
+    border-radius: 0.4rem;
 }
 
 textarea{
     font-family: "Nunito";
     font-size: 1rem;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    width: 96%;
-    height: 10rem;
-    padding: 1rem;
+    width: 15rem;
+    height: 2rem;
+    padding-top: 0.5rem;
     margin-bottom: 1rem;
-    border: 0.125rem solid black;
+    margin-top: -1rem;
+    margin-left: 4rem;
+    box-shadow: 10px 5px 5px rgba(92, 91, 91, 0.33);
     border-radius: 0.4rem;
     resize: vertical;
 }
 
-.submit{
-    width: 100%;
+#message{
+    height: 10rem;
+}
+
+::placeholder{
+    color: black;
+    text-align: center;
+}
+
+.submit, .save{
+    width: 10rem;
     padding: 0.75rem;
-    background-color: rgb(142, 142, 142);
-    border: solid black;
+    margin-left: 7rem;
+    background-color: rgb(15, 42, 61);
+    border: 0.125rem solid black;
     border-radius: 0.4rem;
     font-size: 1rem;
     cursor: pointer;
+    color: white;
 }
 
-.submit:hover{
+.submit:hover, .save:hover{
     background-color: rgb(247, 233, 0);
 }
 
 #responseMessage{
     margin-top: 1rem;
-    margin-left: 38%;
+    margin-left: 6rem;
 }
 
 /*Responsive Design - I included these designs in my wireframes

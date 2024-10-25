@@ -3,11 +3,11 @@
 
 //This is the function for the Submit button. When it is clicked, the code will check if the user wrote something.
 function submitForm(){
-    const contactMessage = document.getElementById("contactMessage").value;
+    const userMessage = document.getElementById("message").value;
     const responseMessage = document.getElementById("responseMessage");
 
   //If nothing is written, the error message will appear in red. If something is written, the response will appear in purple.
-    if (contactMessage.trim() === ""){
+    if (userMessage.trim() === ""){
         responseMessage.textContent = "Please enter a message.";
         responseMessage.style.color = "red";
     } else {
@@ -15,7 +15,7 @@ function submitForm(){
         responseMessage.textContent = "Thank you for your message!";
         responseMessage.style.color = "rgba(100, 73, 58)";
 
-      //Clear the text area when the messageis submitted
-        document.getElementById("contactMessage").value = "";
+      //Clear the text area when the message is submitted
+        document.getElementById("message").value = "";
     }
 }
