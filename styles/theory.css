@@ -19,6 +19,12 @@ main{
     font-size: 1.1rem;
 }
 
+.essay{
+    margin-left: 6rem;
+    margin-right: 6rem;
+    margin-bottom: 4rem;
+}
+
 .menu{
     display: none;
     padding-bottom: 0.75rem;
@@ -57,24 +63,10 @@ h4{
     background-color: rgba(104, 84, 73, 1);
 }
 
-.essay{
-    margin-right: 1rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
-    background-color: white;
-    border: 0.125rem solid black;
-    border-radius: 0.4rem;
-}
-
 .theory{
-    margin-top: 4rem;
     margin-bottom: 4rem;
     padding-left: 2rem;
     padding-right: 3rem;
-    padding-bottom: 2rem;
-    background-color: white;
-    border: 0.125rem solid black;
-    border-radius: 0.4rem;
 }
 
 .heading, .up{
@@ -157,7 +149,6 @@ figcaption{
     width: 28.5rem;
     height: 16rem;
     display: block;
-    margin-left: 2rem;
     margin-bottom: 1rem;
 }
 

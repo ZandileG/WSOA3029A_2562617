@@ -24,7 +24,7 @@ function enterEmail(){
   if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(userEmail)){
     validEmail.checked = true; 
   } else{
-    alert("You did not enter a valid email format!");  
+    alert("You did not enter a valid email!");  
     validEmail.checked = false; 
   //Removes the user's incorrect input
     document.getElementById("email").value = "";

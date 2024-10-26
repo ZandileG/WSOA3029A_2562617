@@ -86,11 +86,8 @@ video{
 }
 
 section, .graph{
-    border: 0.125rem solid black;
-    background-color: white;
     margin-left: 10rem;
     margin-right: 10rem;
-    margin-bottom: 5rem;
     border-radius: 0.4rem;
 }
 
