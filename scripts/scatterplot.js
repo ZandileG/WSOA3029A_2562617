@@ -1,4 +1,4 @@
-//I used and modified the code from the data visualisation tutorials in class.
+//I used and modified the code from the scatterplot graph data visualisation tutorial in class.
 
 //Fetches my API data
 //The API has Brooklyn Nine-Nine Data

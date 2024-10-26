@@ -19,7 +19,7 @@ flipButton.addEventListener("click", function(){
   characterContainer.addEventListener("animationend", () => {
   characterContainer.classList.remove("flip-animation");
 
-//Updates the text using the data from the characters.js script
+//Updates the text and images using the data from the characters script
   currentCharacter = (currentCharacter + 1) % characters.length;
 
   characterName.textContent = characters[currentCharacter].name;

@@ -1,4 +1,4 @@
-//This is all my character information that I use in character-changer.js
+//This is all my character information that I use in the character-changer script
 export const characters = [
 {
     name: "Jake Peralta",

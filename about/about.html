@@ -65,32 +65,32 @@
             <form id="subscriptionForm">
                 <h4 class="heading">Name:</h4>
                 <div class="side-by-side">
-                <textarea id="name" onchange="enterName()" name="name" rows="1" placeholder="Enter your name..."></textarea>
-                <input type="checkbox" name="tick" id="validName">
+                <input type="text" id="name" onchange="enterName()" name="name" rows="1" placeholder="Enter your name...">
+                <label class="tick"><input type="checkbox" name="checkbox" id="validName"><div class="checkmark"></div></label>
                 </div>
 
                 <h4>Email:</h4>
                 <div class="side-by-side">
-                <textarea id="email" onchange="enterEmail()" name="email" rows="1" placeholder="Enter your email..."></textarea>
-                <input type="checkbox" name="tick" id="validEmail">
+                <input type="text" id="email" onclick="errorMessage()" onchange="enterEmail()" name="email" rows="1" placeholder="Enter your email...">
+                <label class="tick"><input type="checkbox" name="checkbox" id="validEmail"><div class="checkmark"></div></label>
                 </div>
 
                 <h4>Phone Number:</h4>
                 <div class="side-by-side">
-                <textarea id="number" onchange="enterNumber()" name="number" rows="1" placeholder="Enter your number..."></textarea>
-                <input type="checkbox" name="tick" id="validNumber">
+                <input type="text" id="number" onclick="errorMessage1()" onchange="enterNumber()" name="number" rows="1" placeholder="Enter your number...">
+                <label class="tick"><input type="checkbox" name="checkbox" id="validNumber"><div class="checkmark"></div></label>
                 </div>
 
                 <h4>Create Password:</h4>
                 <div class="side-by-side">
-                <textarea id="password" onchange="enterPassword()" name="password" rows="1" placeholder="Enter your password..."></textarea>
-                <input type="checkbox" name="tick" id="validPassword">
+                <input type="text" id="password" onclick="errorMessage2()" onchange="enterPassword()" name="password" rows="1" placeholder="Enter your password...">
+                <label class="tick"><input type="checkbox" name="checkbox" id="validPassword"><div class="checkmark"></div></label>
                 </div>
 
                 <h4 class="heading">Write me a message:</h4>
-                <textarea id="message" name="message" rows="1" placeholder="Enter your message..."></textarea>
-                <button type="button" class="submit" onclick="submitMessage()">Submit</button>
+                <textarea id="message" onclick="errorMessage3()" onchange="enterMessage()" name="message" rows="5" placeholder="Enter your message..."></textarea>
             </form>
+            <button type="button" class="submit" onclick="submit()">Submit</button>
             </div>
         </div>
 </main>

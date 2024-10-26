@@ -19,7 +19,7 @@ export function initialiseMenu (currentPage){
     ul.classList.add("menu");
 
     //When the user is on a page its nav menu list item will not be underlined
-    for (let menuItem of menuItems) {
+    for (let menuItem of menuItems){
         const li = document.createElement("li");
         li.classList.add("menu-item");
         if (currentPage !== menuItem.name) {
@@ -36,7 +36,8 @@ export function initialiseMenu (currentPage){
     nav.appendChild(ul);
 };
 
-//The menu opens when the open button is clicked and it closes when the close button is clicked
+/*When the user has a device with a smaller screen, they can open the sidebar  
+by clicking the open button and close it by clicking the close button.*/
 document.querySelector(".menu").addEventListener("click", function() {
     const nav = document.querySelector(".nav");
     const closeButton = document.querySelector(".close");

@@ -3,6 +3,7 @@
 let topBtn = document.querySelector(".back-to-top");
 
 window.onscroll = function(){
+//Run the function
   scrollFunction()
 };
 
@@ -16,6 +17,7 @@ function scrollFunction(){
   }
 }
 
+//When the user clicks on the button, the page will scroll to the top
 topBtn.addEventListener("click", function(){
   window.scrollTo({ 
       top: 0, 

@@ -84,8 +84,6 @@ section{
 }
 
 /*The corner arrow will glow once to show the user that they can click it.*/
-/*I got the glowing code and modified it from Stack Overflow: 
-https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow*/
 .corner{
     border-radius: 10px;
     animation: glow 1s alternate;
@@ -178,7 +176,7 @@ https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow*/
 
   #button-container, .icons{
     margin-left: 35%;
-}
+  }
 }
 
   @media (max-width: 768px){

@@ -4,12 +4,11 @@ const userName = document.getElementById("name").value;
 const validName = document.getElementById("validName");
 
 //If the user doesn't enter any numbers or symbols, their input will be accepted
+  //I learnt the letter characters: /^[a-zA-Z\s]+$/ from this website "https://www.javatpoint.com/javascript-form"
   if (/^[a-zA-Z\s]+$/.test(userName)){
-    validName.style.display = "block";
     validName.checked = true; 
   } else{
-  alert("You can only use letters not numbers!");  
-    validName.style.display = "none";  
+  alert("You can only use letters!");  
     validName.checked = false; 
   //Removes the user's incorrect input
     document.getElementById("name").value = "";
@@ -21,12 +20,11 @@ function enterEmail(){
   const validEmail = document.getElementById("validEmail");
 
   //If the user enters a valid email format, their input will be accepted
+  //I learnt these email characters from this website "https://www.javatpoint.com/javascript-form"
   if (/^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/.test(userEmail)){
-    validEmail.style.display = "block";
     validEmail.checked = true; 
   } else{
     alert("You did not enter a valid email format!");  
-    validEmail.style.display = "none";
     validEmail.checked = false; 
   //Removes the user's incorrect input
     document.getElementById("email").value = "";
@@ -39,11 +37,9 @@ function enterNumber(){
 
 //If the user enters 10 numbers, their input will be accepted
   if (!isNaN(userNumber) && userNumber.length === 10){
-    validNumber.style.display = "block";
     validNumber.checked = true;
   } else{
     alert("You can only enter 10 numerical digits!");  
-    validNumber.style.display = "none";
     validNumber.checked = false; 
   //Removes the user's incorrect input
   document.getElementById("number").value = "";
@@ -57,62 +53,82 @@ function enterPassword(){
 
 //The password must be 5 characters long
   if(userPassword.length === 5){
-//I want the password to appear as dots after it is saved
+
+//I want the password to appear as dots after it is saved.
     document.getElementById("password").value = "•••••";
-    validPassword.style.display = "block";
     validPassword.checked = true;
     alert("Your password is successfully saved!");  
   } else{
     alert("Your password can only be 5 characters long!"); 
-    validPassword.style.display = "none"; 
   //Clear the text field when the save button is pressed
     document.getElementById("password").value = "";
   }
 }
 
-//The user can save their information. If there is text field that is empty, an error alert will appear.
-function saveInfo(){
+//The user can contact me by writing a message into the Message text field.
+function enterMessage(){
+  const userMessage = document.getElementById("message").value;
+
+  if(!userMessage.length > 50){
+    alert("Your message can only be 50 characters long!");  
+  }
+}
+
+//This is the function for the Submit button. When it is clicked, the code will check if the user wrote something.
+function submit(){
+  const userMessage = document.getElementById("message").value;
+  const ticks = document.querySelectorAll(".checkmark");
+
+//If nothing is written, the error message will appear.
+if (userMessage.trim() === ""){
+  alert("Please enter a message!");  
+} else{ 
+//This is the response that the user will get after submitting the form.
+  alert("You are now subscribed to my Brooklyn Nine-Nine newsletter!");  
+//Clear all the text fields when the form is submitted
+  document.getElementById("name").value = "";
+  document.getElementById("email").value = "";
+  document.getElementById("number").value = "";
+  document.getElementById("password").value = "";
+  document.getElementById("message").value = "";
+
+//Remove the ticks
+  ticks.forEach(tick => {
+    tick.style.display = "none";
+  });
+} 
+}
+
+/*The user has to enter their information in the order that the form presents. 
+  If there is text field that is empty, an error alert will appear.*/
+function errorMessage(){
   const userName = document.getElementById("name").value;
-  const userEmail = document.getElementById("email").value;
-  const userNumber = document.getElementById("number").value;
-  const userPassword = document.getElementById("password").value;
   //If nothing is written, the error message will appear.
   if (userName.trim() === ""){
-    alert("Please enter your name!");  
+    alert("Please enter your name first!");  
   } 
+}
 
-  if(userEmail.trim() === ""){
-    alert("Please enter your email!");  
-  }
+function errorMessage1(){
+  const userEmail = document.getElementById("email").value;
+
+  if (userEmail.trim() === ""){
+    alert("Please enter your email first");  
+  } 
+}
+
+function errorMessage2(){
+  const userNumber = document.getElementById("number").value;
 
   if (userNumber.trim() === ""){
-    alert("Please enter your phone number!");  
+    alert("Please enter your phone number first!");  
   } 
-  
-  if(userPassword.trim() === ""){
-  } else{
-    alert("Please enter your password!");  
-  }
 }
 
-//The user can contact me by writing a message into the text field from my About page.
-//This is the function for the Submit button. When it is clicked, the code will check if the user wrote something.
-function submitMessage(){
-    const userMessage = document.getElementById("message").value;
+function errorMessage3(){
+  const userPassword = document.getElementById("password").value;
 
-  //If nothing is written, the error message will appear.
-    if (userMessage.trim() === ""){
-        alert("Please enter a message.");  
-    } 
-    else{
-        //This is the response that the user will get after submitting the form.
-        alert("Thank you for your message!");  
-
-      //Clear all the text field when the message is submitted
-      document.getElementById("name").value = "";
-      document.getElementById("email").value = "";
-      document.getElementById("number").value = "";
-      document.getElementById("message").value = "";
-    }
+  if (userPassword.trim() === ""){
+    alert("Please enter your password first!");  
+  } 
 }
-

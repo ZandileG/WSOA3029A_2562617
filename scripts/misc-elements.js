@@ -3,13 +3,13 @@
   When the reader is done scrolling, the bar will be full and when they scroll up, it will move back.*/
   document.addEventListener("DOMContentLoaded", function(){
     
-    //Runs the function
     window.onscroll = function(){ 
+//Runs the functions
         updateProgressBar(); 
         scrollFunction(); 
     };
 
-    //Functionality for the progress bar 
+//Functionality for the progress bar 
     function updateProgressBar(){
         let winScroll = window.pageYOffset || document.documentElement.scrollTop;
         let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
@@ -17,7 +17,7 @@
         document.getElementById("progress-bar").style.width = scrolled + "%";
     }
 
-    //Functionality for the Back to top button 
+//Functionality for the Back to top button 
     let topBtn = document.querySelector(".back-to-top");
 
     function scrollFunction(){
@@ -29,6 +29,7 @@
         }
     }
 
+//When the user clicks the button, the page will scroll to the top
     topBtn.addEventListener("click", function(){
         window.scrollTo({ 
             top: 0, 
@@ -63,8 +64,9 @@ const messages = [
 
 let index = 0;
 
+//Functionality for the messages' appearances
 const displayMessage = function(){
-  if (index < messages.length) {
+  if (index < messages.length){
       const heading = document.getElementById("Message");
       
       heading.innerHTML = messages[index];
@@ -73,4 +75,5 @@ const displayMessage = function(){
   }
 };
 
+//Run the function
 displayMessage();

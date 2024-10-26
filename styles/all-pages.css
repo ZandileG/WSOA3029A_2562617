@@ -78,8 +78,7 @@ footer img{
 }
 
 /*The icons in the footer will glow when the user hovers over them*/
-/*I got the glowing code and modified it from Stack Overflow: 
-https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow*/
+/*I learnt the glowing code from Stack Overflow: https://stackoverflow.com/questions/34821217/easily-create-an-animated-glow*/
 footer img:hover{
         animation: glow 1s infinite alternate;
       }
@@ -116,10 +115,6 @@ footer img:hover{
 
 /*Responsive Design - I included these designs in my wireframes
   My chosen screen sizes are: 457 x 815 for Mobile, 768 x 1024 for Tablet, and 1920 x 1080 for Desktop*/
-  @media (min-width: 500px){    
-    
-}
-
 @media (max-width: 768px){
     header img{
         display: block;
