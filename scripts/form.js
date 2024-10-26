@@ -8,14 +8,14 @@ function submitForm(){
 
   //If nothing is written, the error message will appear in red. If something is written, the response will appear in purple.
     if (userMessage.trim() === ""){
-        responseMessage.textContent = "Please enter a message.";
-        responseMessage.style.color = "red";
-    } else {
+        alert("Please enter a message.");  
+    } 
+    else {
         //This is the response that the user will get after submitting the form.
-        responseMessage.textContent = "Thank you for your message!";
-        responseMessage.style.color = "rgba(100, 73, 58)";
+        alert("Thank you for your message!");  
 
       //Clear the text area when the message is submitted
         document.getElementById("message").value = "";
     }
 }
+
