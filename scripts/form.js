@@ -60,7 +60,7 @@ userPassword.addEventListener("change", function(){
 //I want the password to appear as dots after it is saved.
     document.getElementById("password").value = "•••••";
     validPassword.checked = true;
-    alert("Your password is successfully saved!");  
+    alert("Your password has been successfully saved!");  
   } else{
     alert("Your password can only be 5 characters long!"); 
     document.getElementById("password").value = "";
@@ -128,7 +128,7 @@ userMessage.addEventListener("click", function(){
   }
 
   else if(userEmail.value.trim() === ""){
-    alert("Please enter your email");  
+    alert("Please enter your email!");  
   }
 
   else if(userNumber.value.trim() === ""){
