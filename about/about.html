@@ -12,7 +12,6 @@
     <script type="module"> import { initialiseMenu } from "../scripts/all-pages.js"
     initialiseMenu("About")</script>
     <script type="module" src="../scripts/top-button.js"></script>
-    <script src="../scripts/form.js"></script>
 
     <link rel="stylesheet" href="../styles/all-pages.css">
     <link rel="stylesheet" href="../styles/about.css">
@@ -65,35 +64,35 @@
             <form id="subscriptionForm">
                 <h4 class="heading">Name:</h4>
                 <div class="side-by-side">
-                <input type="text" id="name" onchange="enterName()" name="name" rows="1" placeholder="Enter your name...">
+                <input type="text" id="name" name="name" rows="1" placeholder="Enter your name...">
                 <label class="tick"><input type="checkbox" name="checkbox" id="validName"><div class="checkmark"></div></label>
                 </div>
 
                 <h4>Email:</h4>
                 <div class="side-by-side">
-                <input type="text" id="email" onclick="errorMessage()" onchange="enterEmail()" name="email" rows="1" placeholder="Enter your email...">
+                <input type="text" id="email" name="email" rows="1" placeholder="Enter your email...">
                 <label class="tick"><input type="checkbox" name="checkbox" id="validEmail"><div class="checkmark"></div></label>
                 </div>
 
                 <h4>Phone Number:</h4>
                 <div class="side-by-side">
-                <input type="text" id="number" onclick="errorMessage1()" onchange="enterNumber()" name="number" rows="1" placeholder="Enter your number...">
+                <input type="text" id="number" name="number" rows="1" placeholder="Enter your number...">
                 <label class="tick"><input type="checkbox" name="checkbox" id="validNumber"><div class="checkmark"></div></label>
                 </div>
 
                 <h4>Create Password:</h4>
                 <div class="side-by-side">
-                <input type="text" id="password" onclick="errorMessage2()" onchange="enterPassword()" name="password" rows="1" placeholder="Enter your password...">
+                <input type="text" id="password" name="password" rows="1" placeholder="Enter your password...">
                 <label class="tick"><input type="checkbox" name="checkbox" id="validPassword"><div class="checkmark"></div></label>
                 </div>
 
                 <h4 class="heading">Write me a message:</h4>
-                <textarea id="message" onclick="errorMessage3()" onchange="enterMessage()" name="message" rows="5" placeholder="Enter your message..."></textarea>
+                <textarea id="message" name="message" rows="5" placeholder="Enter your message..."></textarea>
             </form>
-            <button type="button" class="submit" onclick="submit()">Submit</button>
+            <button type="button" class="submit">Submit</button>
             </div>
         </div>
-</main>
+    </main>
 
 <div id="button-container">
     <button class="back-to-top" aria-label="Back to top button"><img src="../images/arrow-up.png" class="button" alt="Top"></button>
@@ -107,5 +106,6 @@
         <a href="https://www.netflix.com/browse?jbv=70281562" target="_blank" aria-label="Netflix Page Link"><img src="../images/netflix.png" alt="Netflix Icon"></a>
     </div>
     </footer>
+    <script src="../scripts/form.js"></script>
 </body>
 </html>
