@@ -183,6 +183,7 @@ input, textarea{
 
 .submit:hover{
     background-color: rgb(247, 233, 0);
+    color: black;
 }
 
 /*Responsive Design - I included these designs in my wireframes
