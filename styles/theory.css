@@ -22,7 +22,12 @@ main{
 .essay{
     margin-left: 6rem;
     margin-right: 6rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     margin-bottom: 4rem;
+    border-radius: 0.4rem;
+    background-color: white;
+    border: 0.125rem solid black;
 }
 
 .menu{
@@ -67,6 +72,9 @@ h4{
     margin-bottom: 4rem;
     padding-left: 2rem;
     padding-right: 3rem;
+    border-radius: 0.4rem;
+    background-color: white;
+    border: 0.125rem solid black;
 }
 
 .heading, .up{
@@ -146,9 +154,11 @@ figcaption{
 }
 
 .figure4{
-    width: 28.5rem;
-    height: 16rem;
+    width: 25rem;
+    height: 15rem;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 1rem;
 }
 

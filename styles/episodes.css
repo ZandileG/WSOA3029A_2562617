@@ -45,7 +45,7 @@ main{
 }
 
 .episode-info{
-    padding-left: 3rem;
+    margin-left: 3rem;
 }
 
 video{
@@ -54,13 +54,13 @@ video{
     border-radius: 0.5rem;
 }
 
-.dv{
+.dv, .desc{
     text-align: center;
     margin-top: 5rem;
 }
 
-.desc{
-    text-align: center;
+.desc2{
+    text-align: center; 
 }
 
 .buttons{
@@ -89,6 +89,8 @@ section, .graph{
     margin-left: 10rem;
     margin-right: 10rem;
     border-radius: 0.4rem;
+    background-color: white;
+    border: 0.125rem solid black;
 }
 
 svg{
