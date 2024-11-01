@@ -50,6 +50,10 @@ h4{
     margin-top: 0rem;
 }
 
+.essay h4{
+    color: rgb(116, 84, 5);
+}
+
 .essay h3{
     margin-top: 2rem;
 }
