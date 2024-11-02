@@ -46,12 +46,14 @@ h2{
     text-align: center;
 }
 
-h4{
-    margin-top: 0rem;
+.essay h4{
+    color: rgb(15, 42, 61);
+    margin-bottom: -0.5rem;
 }
 
-.essay h4{
-    color: rgb(116, 84, 5);
+.essay p{
+    margin-bottom: 2rem;
+    line-height: 1.75rem;
 }
 
 .essay h3{
