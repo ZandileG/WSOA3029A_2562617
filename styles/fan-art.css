@@ -117,10 +117,14 @@ main{
     border: 0.1rem solid black;
 }
 
-/*@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
+    
+}
+
+@media screen and (max-width: 700px){
     .menu{
         display: block;
-        margin-left: 24.5rem;
+        margin-left: 90%
     }
 
     .close{
@@ -133,17 +137,15 @@ main{
 
     .nav ul{
         flex-direction: column;
-        margin-right: 31%;
-        margin-top: 0;
+        margin-right: 30%;
         gap: 1.5rem;
         padding-top: 5rem;
-        padding-left: 5rem;
+        padding-left: 100rem;
         padding-right: 5rem;
         padding-bottom: 14.25rem;
         background-color: rgb(111, 82, 66);
-        border-right: 3px solid black;
     }
-}*/
+}
 
 @media screen and (max-width: 768px){
     .art{
@@ -157,7 +159,7 @@ main{
     }
 }
 
-@media screen and (max-width: 900px){
+@media screen and (max-width: 1000px){
     header img{
         display: block;
         margin-top: 1rem;
