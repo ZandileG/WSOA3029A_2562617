@@ -107,33 +107,7 @@ text{
     font-weight: bold;
 }
 
-   @media screen and (max-width: 500px){
-    .menu{
-        display: block;
-        margin-left: 24.5rem;
-    }
-
-    .close{
-        display: none;
-    }
-
-    .nav{
-        display: none;
-    }
-
-    .nav ul{
-        flex-direction: column;
-        margin-right: 31%;
-        margin-top: 0;
-        gap: 1.5rem;
-        padding-top: 5rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        padding-bottom: 14.25rem;
-        background-color: rgb(111, 82, 66);
-        border-right: 3px solid black;
-    }
-
+/*@media screen and (max-width: 500px){
     video{
         margin-top: 0rem;
         width: 25rem;
@@ -158,10 +132,6 @@ text{
 }
 
  @media screen and (max-width: 768px){
-    header{
-        height: 20rem;
-    }
-
     .episode-container{
         display: block;
     }
@@ -202,8 +172,7 @@ text{
     article h2, .episode-title{
         text-align: center;
     }
-}
-
+}*/
 
 @media screen and (max-width: 764px){
     .menu{
@@ -239,6 +208,10 @@ text{
         margin-right: auto;
     }
 
+    header{
+        height: 20rem;
+    }
+    
     .nav ul{
         margin-top: 13rem;
         font-size: 1rem;

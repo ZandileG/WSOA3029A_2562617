@@ -83,7 +83,6 @@ section{
     margin-top: 21.5rem;
 }
 
-/*The corner arrow will glow once to show the user that they can click it.*/
 .corner{
     border-radius: 10px;
     animation: glow 1s alternate;
@@ -108,17 +107,16 @@ section{
     cursor: pointer;
 }
 
-.character {
+.character{
     position: relative;
     perspective: 1000px;
   }
 
-  /*Flips the page when the button is clicked*/
-  .flip-animation {
+  .flip-animation{
     animation: flip 0.8s forwards;
   }
   
-  @keyframes flip {
+  @keyframes flip{
     0% {
       transform: rotateY(0);
     }
@@ -132,35 +130,7 @@ section{
     }
   }
   
-   @media screen and (max-width: 500px){
-    .menu{
-      display: block;
-      margin-left: 24.5rem;
-  }
-
-  .close{
-      display: none;
-  }
-
-  .nav{
-      display: none;
-  }
-
-  .nav ul{
-      flex-direction: column;
-      margin-right: 31%;
-      margin-top: 0;
-      gap: 1.5rem;
-      padding-top: 5rem;
-      padding-left: 5rem;
-      padding-right: 5rem;
-      padding-bottom: 14.25rem;
-      background-color: rgb(111, 82, 66);
-      border-right: 3px solid black;
-      position: absolute;
-      z-index: 1;
-  }
-
+/*@media screen and (max-width: 500px){
   .character{
     margin-left: -11rem;
     position: relative;
@@ -178,10 +148,6 @@ section{
 }
 
    @media screen and (max-width: 768px){
-    header{
-      height: 20rem;
-    }
-
     section{
       display: block;
     }
@@ -203,8 +169,7 @@ section{
       margin-top: 0;
       margin-left: 10rem;
     }
-  }
-
+  }*/
   
 @media screen and (max-width: 764px){
   .menu{
@@ -238,6 +203,10 @@ section{
       margin-top: 1rem;
       margin-left: auto;
       margin-right: auto;
+  }
+
+  header{
+    height: 20rem;
   }
 
   .nav ul{

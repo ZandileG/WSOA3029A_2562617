@@ -46,41 +46,15 @@ footer img:hover{
     }
   }
 
-   @media screen and (max-width: 500px){
+/*@media screen and (max-width: 500px){
     footer{
         display: block;
         height: 8rem;
     }
 
-    .nav{
-        display: none;
-    }
-
-    .nav ul{
-        flex-direction: column;
-        margin-right: 30%;
-        margin-top: 0;
-        gap: 1.5rem;
-        padding-top: 5rem;
-        padding-left: 5rem;
-        padding-right: 5rem;
-        padding-bottom: 14.25rem;
-        background-color: rgb(15, 42, 61);
-        border-right: 1px solid white;
-    }
-
     #Message{
         margin-bottom: 10rem;
         font-size: 1rem;
-    }
-
-    .menu{
-        display: block;
-        margin-left: 24.5rem;
-    }
-
-    .close{
-        display: none;
     }
 }
 
@@ -96,7 +70,7 @@ footer img:hover{
     #Message{
         margin-top: 9rem;
     }
-}
+}*/
 
 
 @media screen and (max-width: 764px){
@@ -131,6 +105,10 @@ footer img:hover{
         margin-top: 1rem;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    header{
+        height: 20rem;
     }
 
     .nav ul{
