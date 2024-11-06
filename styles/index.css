@@ -17,15 +17,9 @@ main{
 
 .menu{
     display: none;
-    padding-left: 0rem;
-    padding-right: 0rem;
-    padding-top: 0.2rem;
-    padding-bottom: 0.2rem;
-}
-
-.menu img{
-    width: 50%;
-    margin-top: 0rem;
+    padding-bottom: 0.75rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 }
 
 footer{
@@ -52,48 +46,9 @@ footer img:hover{
     }
   }
 
-/*@media screen and (min-width: 300px){
-    body{
-        background-image: url("../images/Responsive 2.jpg");
-    }
-    
-    .logo img{
-        width: 75%;
-    }
-
-    .nav{
-        display: none;
-    }
-
-
-    .menu{
-        display: block;
-        margin-left: 80%;        
-    }
-
-    .close{
-        display: none;
-    }
-
-    #Message, footer p{
-        font-size: 0.5rem;
-    }
-
-    .icons{
-        margin-left: 33%;
-    }
-
-   footer{
-        display: block;
-        height: 6rem;
-    } 
-}*/
-
-@media screen and (min-width: 400px){
-    
-}
-
-  /*@media (min-width: 500px){
+/*Responsive Design - I included these designs in my wireframes
+  My chosen screen sizes are: 457 x 815 for Mobile, 768 x 1024 for Tablet, and 1920 x 1080 for Desktop*/
+  @media (max-width: 500px){
     footer{
         display: block;
         height: 8rem;
@@ -129,18 +84,11 @@ footer img:hover{
     .close{
         display: none;
     }
-}*/
+}
 
-/*@media (min-width: 768px){
+@media (max-width: 768px){
     body{
         background-image: url("../images/Responsive 2.jpg");
-    }
-
-    .logo{
-        display: block;
-        margin-top: 1rem;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     footer{
@@ -150,33 +98,4 @@ footer img:hover{
     #Message{
         margin-top: 9rem;
     }
-}*/
-
-/*@media (min-width: 1000px){
-
-    body{
-        background-image: url("../images/Responsive.jpg");
-    }
-
-    .logo img{
-        width: 25%;
-        margin-top: 1rem;
-    }
-
-    .nav ul li a, .nav li.active{
-        font-size: small;
-    }
-
-    .nav li.active{
-        margin-top: 0.5rem;
-    }
-
-    #Message{
-        margin-bottom: 10rem;
-        font-size: 0.75rem;
-    }
-
-    footer{
-        display: block;
-    }
-}*/
+}

@@ -113,6 +113,8 @@ footer img:hover{
     background-color: rgb(247, 233, 0);
 }
 
+/*Responsive Design - I included these designs in my wireframes
+  My chosen screen sizes are: 457 x 815 for Mobile, 768 x 1024 for Tablet, and 1920 x 1080 for Desktop*/
 @media (max-width: 768px){
     header img{
         display: block;
