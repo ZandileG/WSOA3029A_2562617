@@ -17,8 +17,6 @@ h1{
 }
 
 main{
-    /*margin-left: 5rem;*/
-    margin-right: 5rem;
     font-family: "Nunito";
     font-size: 1rem;
 }
@@ -40,17 +38,35 @@ main{
     display: flex;
     gap: 2rem;
     padding-bottom: 2rem;
-    margin-left: 25%;
+    margin-left: 22rem;
+}
+
+.art1{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 24rem;
 }
 
 .art2{
+    display: flex;
+    gap: 2rem;
     padding-bottom: 2rem;
-    margin-left: 28%;
+    margin-left: 25rem;
 }
 
 .art3{
+    display: flex;
+    gap: 2rem;
     padding-bottom: 2rem;
-    margin-left: 30%;
+    margin-left: 28rem;
+}
+
+.art4{
+    display: flex;
+    gap: 2rem;
+    padding-bottom: 2rem;
+    margin-left: 21rem;
 }
 
 .image1{
@@ -117,14 +133,10 @@ main{
     border: 0.1rem solid black;
 }
 
-@media screen and (max-width: 600px){
-    
-}
-
-@media screen and (max-width: 700px){
+@media screen and (max-width: 764px){
     .menu{
         display: block;
-        margin-left: 90%
+        margin-left: 85%
     }
 
     .close{
@@ -137,7 +149,7 @@ main{
 
     .nav ul{
         flex-direction: column;
-        margin-right: 30%;
+        margin-right: 20%;
         gap: 1.5rem;
         padding-top: 5rem;
         padding-left: 100rem;
@@ -147,19 +159,18 @@ main{
     }
 }
 
-@media screen and (max-width: 768px){
-    .art{
-        display: block;
+@media screen and (max-width: 900px){
+    .art img, .art1 img,.art2 img, .art3 img, .art4 img{
+        width: 70%;
+        height: 70%;
     }
 
-    .art img, .art2 img, .art3 img{
-        width: 100%;
-        height: 100%;
-        margin-left: 0rem;
+    .art, .art1, .art2, .art3, .art4{
+        display: block;
     }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1040px){
     header img{
         display: block;
         margin-top: 1rem;
@@ -192,7 +203,7 @@ main{
     }
     
     .image3{
-        width: 20rem;
+        width: 22rem;
         height: 30rem;
     }
     
@@ -202,12 +213,12 @@ main{
     }
     
     .image5, .image7{
-        width: 20rem;
+        width: 22rem;
         height: 30rem;
     }
     
     .image6{
-        width: 20rem;
+        width: 22rem;
         height: 30rem;
     }
     
@@ -217,22 +228,30 @@ main{
     }
     
     .image9, .image10{
-        width: 20rem;
+        width: 22rem;
         height: 28rem;
     }
 }
 
-@media screen and (max-width: 1100px){
+@media screen and (max-width: 1180px){
     .art{
-        margin-left: 16%;
+        margin-left: 11rem;
+    }
+
+    .art1{
+        margin-left: 13rem;
     }
 
     .art2{
-        margin-left: 20%;
+        margin-left: 14rem;
     }
 
     .art3{
-        margin-left: 22%;
+        margin-left: 16rem;
+    }
+
+    .art4{
+        margin-left: 10rem;
     }
 
     .nav ul a{
