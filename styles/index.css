@@ -46,32 +46,6 @@ footer img:hover{
     }
   }
 
-/*@media screen and (max-width: 500px){
-    footer{
-        display: block;
-        height: 8rem;
-    }
-
-    #Message{
-        margin-bottom: 10rem;
-        font-size: 1rem;
-    }
-}
-
- @media screen and (max-width: 768px){
-    body{
-        background-image: url("../images/Responsive 2.jpg");
-    }
-
-    footer{
-        display: block;
-    }
-
-    #Message{
-        margin-top: 9rem;
-    }
-}*/
-
 @media screen and (max-width: 764px){
     .menu{
         display: block;
@@ -125,4 +99,20 @@ footer img:hover{
     .nav ul a{
         font-size: medium;
     }
+
+    footer{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        background-image: url("../images/Responsive.jpg");
+        background-size: cover;
+    }
+
+    #Message{
+        font-size: medium;
+        margin-bottom: 13rem;
+     }
 }
