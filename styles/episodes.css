@@ -107,72 +107,11 @@ text{
     font-weight: bold;
 }
 
-/*@media screen and (max-width: 500px){
-    video{
-        margin-top: 0rem;
-        width: 25rem;
-        height: 15rem;
-    }
-
-    .paragraphs{
-        margin-left: -3rem;
-    }
-
-    article p{
-        width: 22rem;
-    }
-
-    .episode-container{
-        margin-left: -2rem;
-    }
-
-    .dv, .desc, section, .graph{
+@media screen and (max-width: 600px){
+    .dv, .desc, .desc2, section, .graph{
         display: none;
     }
 }
-
- @media screen and (max-width: 768px){
-    .episode-container{
-        display: block;
-    }
-
-    .graph{        
-        margin-left: -1.5rem;
-        width: 45rem;
-        height: 50rem;
-    }
-
-    section{
-        margin-left: -5rem;
-        height: 50rem;
-        background-color: rgba(255, 255, 255, 0);
-        border: none;
-    }
-
-    section svg{
-        width: 50rem;
-    }
-    
-    .graph svg{
-        width: 45rem;
-    }
-
-    video{
-        margin-left: 1rem;
-    }
-
-    main{
-        margin-left: 2rem;
-    }
-
-    article p{
-        margin-left: 6rem;
-    }
-
-    article h2, .episode-title{
-        text-align: center;
-    }
-}*/
 
 @media screen and (max-width: 764px){
     .menu{
@@ -197,6 +136,22 @@ text{
         padding-right: 5rem;
         padding-bottom: 14.25rem;
         background-color: rgb(111, 82, 66);
+    }
+
+    svg{
+        width: 100%;
+        margin-left: -1rem;
+    }
+}
+
+@media screen and (max-width: 900px){
+    .video2{
+        display: none;
+    }
+
+    main{
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
 }
 
@@ -226,5 +181,34 @@ text{
 @media screen and (max-width: 1180px){
     .nav ul a{
         font-size: medium;
+    }
+
+    .graph, section{
+        width: 130%;
+    }
+}
+
+@media screen and (max-width: 1385px){
+    .graph, section{
+        margin-left: -5rem;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .episode-container{
+        display: block;
+    }
+
+    video{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .paragraphs{
+        margin-left: -3rem;
     }
 }
