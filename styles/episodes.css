@@ -136,11 +136,7 @@ text{
         padding-right: 5rem;
         padding-bottom: 14.25rem;
         background-color: rgb(111, 82, 66);
-    }
-
-    svg{
-        width: 100%;
-        margin-left: -1rem;
+        z-index: 2;
     }
 }
 
@@ -185,6 +181,11 @@ text{
 
     .graph, section{
         width: 130%;
+    }
+
+    svg{
+        width: 100%;
+        margin-left: -1rem;
     }
 }
 
