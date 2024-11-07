@@ -130,47 +130,6 @@ section{
     }
   }
   
-/*@media screen and (max-width: 500px){
-  .character{
-    margin-left: -11rem;
-    position: relative;
-  }
-
-  .character-image{
-    width: 20rem;
-    height: 20rem;
-    margin-left: 4.5rem;
-  }
-
-  #button-container, .icons{
-    margin-left: 35%;
-  }
-}
-
-   @media screen and (max-width: 768px){
-    section{
-      display: block;
-    }
-
-    .character{
-      width: 31rem;
-    }
-
-    .character-name{
-      padding-left: 35%;
-    }
-
-    .character-info{
-      margin-left: -1rem;
-      margin-right: 3rem;
-    }
-
-    .corner{
-      margin-top: 0;
-      margin-left: 10rem;
-    }
-  }*/
-  
 @media screen and (max-width: 764px){
   .menu{
       display: block;
@@ -194,6 +153,12 @@ section{
       padding-right: 5rem;
       padding-bottom: 14.25rem;
       background-color: rgb(111, 82, 66);
+      z-index: 2;
+  }
+
+  main{
+    margin-left: 3rem;
+    margin-right: 3rem;
   }
 }
 
@@ -223,5 +188,40 @@ section{
 @media screen and (max-width: 1180px){
   .nav ul a{
       font-size: medium;
+  }
+
+  .info{
+    display: block;
+  }
+
+  .character-name{
+    margin-left: 23%;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .character{
+    margin-left: 0rem;
+    z-index: 1;
+  }
+
+  .character-image{
+    width: 90%;
+    height: 90%;
+    margin-left: 1rem;
+    margin-top: 1rem;
+  }
+
+  .character-info{
+    width: 85%;
+  }
+
+  .character-name{
+    margin-left: 25%;
+  }
+
+  .corner{
+    margin-top: 0rem;
+    margin-left: 40%;
   }
 }
