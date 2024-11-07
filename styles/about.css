@@ -187,22 +187,24 @@ input, textarea{
     color: black;
 }
 
-/*@media screen and (max-width: 500px){
-    .about-image{
-        width: 23rem;
-        height: 13.5rem;
+@media screen and (max-width: 500px){
+    section p{
+        margin-left: -1rem;
+    }
+
+    .contact h4, input, textarea{
+        margin-left: -3rem;
+        width: 10rem;
+    }
+
+    .desc{
+        margin-left: -2rem;
+    }
+
+    .submit{
+        margin-left: -1.5rem;
     }
 }
-
- @media screen and (max-width: 768px){
-    section{
-        display: block;
-    }
-
-    .about-image{
-        margin-left: 1rem;
-    }
-}*/
 
 @media screen and (max-width: 764px){
     .menu{
@@ -231,10 +233,6 @@ input, textarea{
 
     .about-image3{
         display: none;
-    }
-
-    .side-by-side{
-        
     }
 }
 
@@ -287,10 +285,15 @@ input, textarea{
     }
 
     .contact{
-        margin-left: 1rem;
-        width: 23rem;
+        margin-left: 2rem;
+        width: 10rem;
         padding-bottom: 2rem;   
         border: none;
         background-color: rgba(255, 255, 255, 0);
+    }
+
+    main{
+        margin-left: 4rem;
+        margin-right: 4rem;
     }
 }
