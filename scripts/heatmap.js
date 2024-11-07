@@ -19,25 +19,8 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
 
         //Runs the function
         createMap(episodes, totalEpisodes);
+        createScales();
     });
-
-//get data
-d3.json("data.json").then((data)=> {
-    baseTemp = data.baseTemperature;
-    monthlyVar = data.monthlyVariance;
-
-    createScales();
-    createHeatmap(monthlyVar);
-    });
-
-let xScale;
-    let yScale;
-    
-    let minYear;
-    let maxYear;
-    
-    let baseTemp;
-    let monthlyVar;
 
 let svg = d3
 .select(".heatmap")
@@ -46,76 +29,6 @@ let svg = d3
 
 //create scales and axes
 function createScales(){
-    minYear = d3.min(monthlyVar, (d)=> d.year);
-    maxYear = d3.max(monthlyVar, (d)=> d.year);
-    
-    xScale = d3
-    .scaleLinear()
-    .domain([minYear, maxYear])
-    .range([PADDING, WIDTH - PADDING]);
-    
-    yScale = d3
-    .scaleTime()
-    .domain([new Date(0, 0, 0, 0, 0, 0, 0), new Date(0, 12, 0, 0, 0, 0, 0)])
-    .range([PADDING, HEIGHT - PADDING]);
-
-    svg
-    .append("g")
-    .call(d3.axisBottom(xScale).tickFormat(d3.format(".0f")))
-    .attr("transform", `translate(0, ${HEIGHT - PADDING})`);
-    
-    svg
-    .append("g")
-    .call(d3.axisLeft(yScale).tickFormat(d3.timeFormat("%b")))
-    .attr("transform", `translate(${PADDING}, 0)`);
-}
-
-//create the heatmap
-function setFill(d){
-    if (d.variance <= -1){
-        return "steelblue";
-    } 
-    else if(d.variance <= 0){
-        return "lightsteelblue";
-    }
-    else if(d.variance <= 1){
-        return "orange";
-    } else{
-        return "crimson";
-    }
-}
-
-function createHeatmap(data){
-    svg
-    .selectAll()
-    .data(data)
-    .enter()
-    .append("rect")
-    .attr("height", (HEIGHT- 2 * PADDING) / 12)
-    .attr("width", () =>{
-            let noOfYears = maxYear - minYear;
-            return (WIDTH - 2 * PADDING) / noOfYears;
-    })
-    .attr("x", (d)=> xScale(d.year))
-    .attr("y", (d)=> yScale(new Date(0, d.month - 1, 0, 0, 0, 0, 0)))
-    .style("fill", d => setFill(d));
-} 
-
-//Creating the map
-function createMap(data, totalEpisodes){
-    let HEIGHT = 600,
-        WIDTH = 600,
-        MARGIN = 80;
-
-    //Adding the svg in the div element that has the class map in my Episodes page
-    let svg = d3.select(".map")
-        .append("svg")
-        .attr("height", HEIGHT + MARGIN + MARGIN)
-        .attr("width", WIDTH + MARGIN + MARGIN)
-        .append("g")
-        .attr("transform", `translate(${MARGIN}, ${MARGIN})`);
-
-    //Creating the axes
     let xScale = d3.scaleLinear().domain([1, totalEpisodes]).range([0, WIDTH]);
     svg.append("g")
         .attr("transform", `translate(0, ${HEIGHT})`)
@@ -142,24 +55,58 @@ function createMap(data, totalEpisodes){
              .attr("transform", `translate(-40, ${HEIGHT / 2}) rotate(-90)`);
         });
 
-    //The episodes will be coloured according to their seasons
-    let colorScale = d3.scaleOrdinal()
-        .domain([1, 2, 3, 4, 5, 6, 7, 8])
-        .range(d3.schemeCategory10);
+    svg
+    .append("g")
+    .call(d3.axisBottom(xScale).tickFormat(d3.format(".0f")))
+    .attr("transform", `translate(0, ${HEIGHT - MARGIN})`);
+    
+    svg
+    .append("g")
+    .call(d3.axisLeft(yScale).tickFormat(d3.timeFormat("%b")))
+    .attr("transform", `translate(${MARGIN}, 0)`);
+}
+
+//create the heatmap
+function setFill(d){
+    if (d.rating <= -1){
+        return "orange";
+    } 
+    else if(d.rating <= 0){
+        return "yellow";
+    }
+    else if(d.rating <= 1){
+        return "brown";
+    } else{
+        return "grey";
+    }
+}
+
+//Creating the map
+function createMap(data, totalEpisodes){
+    let HEIGHT = 600,
+        WIDTH = 600,
+        MARGIN = 80;
+
+    //Adding the svg in the div element that has the class map in my Episodes page
+    let svg = d3.select(".map")
+        .append("svg")
+        .attr("height", HEIGHT + MARGIN + MARGIN)
+        .attr("width", WIDTH + MARGIN + MARGIN)
+        .append("g")
+        .attr("transform", `translate(${MARGIN}, ${MARGIN})`);
 
     //Creating the circles  
-    svg.selectAll(".circles")
-        .data(data)
-        .enter()
-        .append("circle")
-        .attr("cx", d => xScale(d.episodeNumber))
-        .attr("cy", d => yScale(d.rating))
-        .attr("r", 4)
-        .style("fill", d => colorScale(d.season))
-        .attr("class", d => "circles season-" + d.season)
-        .on("mouseover", (e, datum) => showTooltip(e, datum))
-        .on("mousemove", moveTooltip)
-        .on("mouseout", removeTooltip);
+    svg
+    .selectAll()
+    .data(data)
+    .enter()
+    .append("rect")
+    .attr("x", (d)=> xScale(d.rating))
+    .attr("y", (d)=> yScale(d.seasons))
+    .style("fill", d => setFill(d))
+    .on("mouseover", (e, datum) => showTooltip(e, datum))
+    .on("mousemove", moveTooltip)
+    .on("mouseout", removeTooltip);
 
     //Creating the tooltip 
     let tooltip = d3.select(".map")
@@ -188,31 +135,4 @@ function createMap(data, totalEpisodes){
     function removeTooltip(){
         tooltip.style("opacity", 0);
     }
-
-    //Creating the legend
-    const seasons = [1, 2, 3, 4, 5, 6, 7, 8];
-    svg
-    .append("g")
-    .selectAll("circle")
-    .data(seasons)
-    .enter()
-    .append("circle")
-    .attr("cx", 530)
-    .attr("cy", (d, i) => 350 + i * 25)
-    .attr("r", 10)
-    .style("fill", d => colorScale(d))
-    .style("stroke", "black")
-    .on("mouseover", (e, season) => highlight(season))
-    .on("mouseout", removeHighlight);
-
-    svg
-    .append("g")
-    .selectAll("text")
-    .data(seasons)
-    .enter()
-    .append("text")
-    .attr("x", 550)
-    .attr("y", (d, i) => 355 + i * 25)
-    .style("fill", "black")
-    .text(d => "Season " + d);
 }
