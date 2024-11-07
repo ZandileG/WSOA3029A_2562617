@@ -190,7 +190,12 @@ figcaption{
         margin-left: 1rem;
     }
 
-    .essay, .theory{
+    .theory{
+        margin-left: -4rem;
+        width: 14rem;
+    }
+
+    .essay{
         margin-left: -5rem;
         width: 14rem;
     }
@@ -260,7 +265,7 @@ figcaption{
     }
 }
 
-@media screen and (max-width: 1200px){
+@media screen and (max-width: 1300px){
     .theory-info{
         display: block;
     }
@@ -278,10 +283,15 @@ figcaption{
     .side-by-side{
         display: block;
     }
+
+    .image{
+        width: 100%;
+        height: 100%;
+    }
 }
 
 @media screen and (max-width: 1500px){
-    .image, .figure, .figure1, .figure2, .figure3, .figure4, .figure5, .planning{
+    .figure, .figure1, .figure2, .figure3, .figure4, .figure5{
         width: 100%;
         height: 100%;
     }

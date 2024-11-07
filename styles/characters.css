@@ -157,8 +157,8 @@ section{
   }
 
   main{
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }
 
@@ -190,16 +190,16 @@ section{
       font-size: medium;
   }
 
-  .info{
-    display: block;
-  }
-
   .character-name{
     margin-left: 23%;
   }
 }
 
 @media screen and (max-width: 1200px){
+  .info{
+    display: block;
+  }
+
   .character{
     margin-left: 0rem;
     z-index: 1;
@@ -213,11 +213,12 @@ section{
   }
 
   .character-info{
-    width: 85%;
+    width: 100%;
+    margin-left: -2rem;
   }
 
   .character-name{
-    margin-left: 25%;
+    margin-left: 26%;
   }
 
   .corner{
