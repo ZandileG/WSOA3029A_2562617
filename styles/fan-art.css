@@ -161,8 +161,8 @@ main{
 
 @media screen and (max-width: 900px){
     .art img, .art1 img,.art2 img, .art3 img, .art4 img{
-        width: 70%;
-        height: 70%;
+        width: 100%;
+        height: 100%;
     }
 
     .art, .art1, .art2, .art3, .art4{
@@ -234,28 +234,12 @@ main{
 }
 
 @media screen and (max-width: 1180px){
-    .art{
-        margin-left: 11rem;
-    }
-
-    .art1{
-        margin-left: 13rem;
-    }
-
-    .art2{
-        margin-left: 14rem;
-    }
-
-    .art3{
-        margin-left: 16rem;
-    }
-
-    .art4{
-        margin-left: 10rem;
-    }
-
     .nav ul a{
         font-size: medium;
     }
-}
 
+    .art, .art1, .art2, .art3, .art4{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+}
