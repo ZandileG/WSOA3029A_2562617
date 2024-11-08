@@ -65,11 +65,11 @@ video{
 
 .buttons{
     display: flex;
-    margin-left: 45%;
+    margin-left: 40%;
     gap: 1rem;
 }
 
-#combine, #split{
+#group, #split, #return{
     margin-top: 1rem;
     font-family: "Nunito";
     font-size: 1rem;
@@ -79,7 +79,7 @@ video{
     background-color: rgb(247, 233, 0);
 }
 
-#combine:hover, #split:hover{
+#group:hover, #split:hover, #return:hover{
     cursor: pointer;
     background-color: white;
 

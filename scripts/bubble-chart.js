@@ -34,7 +34,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
 
 //Creating the bubble chart
 function createBubbleChart(data){
-let width = 800;
+let width = 1000;
 let height = 780;
 
 //Adds the svg in the section element in my Episodes page
@@ -98,11 +98,11 @@ let tooltip = d3.select("section")
                 .style("border-radius", "10%")
                 .style("border", "1px solid black")
                 .style("position", "relative")
-                .style("width", "1.25rem")
+                .style("width", "9rem")
                 .style("opacity", 0);
 
 function showTooltip(datum){
-    tooltip.style("opacity", 1).html(datum.count);
+    tooltip.style("opacity", 1).html(`Episode Count: ${datum.count}`);
     tooltip.style("left", d3.pointer(event)[0] + 200 + "px");
     tooltip.style("top", d3.pointer(event)[1] - 800 + "px");
 }
@@ -127,15 +127,26 @@ function ticked(){
         .attr("y", d => d.y);
     }
 
-//When the combine button is clicked, the bubbles will move closer together
-    d3.select("#combine").on("click", function() {
-        simulation.force("charge", d3.forceManyBody().strength(50)); 
-        simulation.alpha(1).restart(); // Restart simulation
-    });
+//Groups the bubbles/seasons based on their average episode rating
+d3.select("#group").on("click", function(){
+    const avgEpisodeCount = d3.mean(data, d => d.count);
+    
+    simulation.force("center", d3.forceCenter(width / 2, height / 2))
+              .force("x", d3.forceX(d => d.count < avgEpisodeCount ? 100 : 700))
+              .force("y", d3.forceY(height / 2))
+              .alpha(1).restart();
+});
 
-//When the split button is clicked, the bubbles will move away from each other
-    d3.select("#split").on("click", function() {
-        simulation.force("charge", d3.forceManyBody().strength(-50)); 
-        simulation.alpha(1).restart(); 
-    });
+//Splits the bubbles according to episode count
+d3.select("#split").on("click", function(){
+    simulation.force("x", d3.forceX(d => d.count * 48))
+              .force("y", d3.forceY(d => d.count * 10))
+              .alpha(1).restart();
+});
+
+//Returns the chart back to the way it was
+d3.select("#return").on("click", function(){
+    location.reload();
+});
+    
 }
