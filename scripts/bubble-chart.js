@@ -34,7 +34,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
     createBubbleChart(seasonsData);
 
 } catch (error){
-    console.error("This is an issue with processing the API data:", error);
+    console.error("There is an issue with processing the API data:", error);
 }
 })
 .catch(function(error) {
