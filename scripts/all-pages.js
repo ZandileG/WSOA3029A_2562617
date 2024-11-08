@@ -1,3 +1,6 @@
+/*I used and modified the code for the nav from Hanli's tutorial in Semester 1: 
+https://github.com/Wits-Digital-Arts-Interactive-Media/WSOA3028A_2024/blob/main/scripts/menu.js*/
+
 //Nav Menu
 const root = "/WSOA3029A_2562617";
 
