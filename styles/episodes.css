@@ -85,7 +85,7 @@ video{
 
 }
 
-section, .graph{
+section, .graph, .heatmap{
     margin-left: 10rem;
     margin-right: 10rem;
     border-radius: 0.4rem;
@@ -108,7 +108,7 @@ text{
 }
 
 @media screen and (max-width: 600px){
-    .dv, .desc, .desc2, section, .graph{
+    .dv, .desc, .desc2, section, .graph, .heatmap{
         display: none;
     }
 }
@@ -179,7 +179,7 @@ text{
         font-size: medium;
     }
 
-    .graph, section{
+    .graph, section, .heatmap{
         width: 130%;
     }
 
@@ -190,7 +190,7 @@ text{
 }
 
 @media screen and (max-width: 1385px){
-    .graph, section{
+    .graph, section, .heatmap{
         margin-left: -5rem;
     }
 }
