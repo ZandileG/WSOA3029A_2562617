@@ -112,7 +112,7 @@ function createGraph(data, totalEpisodes){
         tooltip.style("opacity", 0);
     }
 
-    //Creating the legend
+    //Creating the key
     const seasons = [1, 2, 3, 4, 5, 6, 7, 8];
     svg
     .append("g")

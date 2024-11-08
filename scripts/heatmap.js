@@ -35,7 +35,7 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
 
 //Function to create the heatmap
     function createHeatmap(seasons){
-        const margin = { top: 40, right: 50, bottom: 70, left: 70 };
+        const margin = { top: 40, right: 85, bottom: 70, left: 70 };
         const width = 700 - margin.left - margin.right;
         const height = 600 - margin.top - margin.bottom;
       
@@ -75,7 +75,7 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
             return "rgb(223, 118, 11)"; 
           }
           else if (rating > 8){
-            return "rgb(116, 60, 8)"; 
+            return "rgb(160, 82, 45)"; 
           }
           else{
             return "white"; 
@@ -100,6 +100,7 @@ svg.selectAll(".cell")
     .style("fill", d => getColour(d.rating))  
     .style("stroke", "white")
     .style("stroke-width", 0.5)
+    .attr("class", d => `cell rating-${Math.floor(d.rating)}`) // Assign class based on rating
     .on("mouseover", (e, datum) => showTooltip(e, datum))
     .on("mousemove", moveTooltip)
     .on("mouseout", removeTooltip);
@@ -120,15 +121,15 @@ svg.selectAll(".x-axis")
 svg.selectAll(".y-axis")
     .data(y.domain())
     .enter().append("g")
-    .attr("transform", d => `translate(0,${y(d)})`)
+    .attr("transform", d => `translate(-10,${y(d)})`)  
     .each(function(d){
         d3.select(this).append("text")
-          .attr("x", -10)
+          .attr("x", -10) 
           .attr("y", y.bandwidth() / 2)
           .attr("dy", ".35em")
           .attr("text-anchor", "middle")
           .text(d => d + 1);  
-        });
+    });
 
 svg.append("text")
     .attr("x", width / 2)
@@ -154,7 +155,7 @@ svg.append("text")
         .style("background-color", "rgb(236, 226, 226)")
         .style("padding", "0.5rem")
         .style("border-radius", "10%")
-        .style("border", "1px solid black")
+        .style("border", "2px solid black")
         .style("position", "absolute")
         .style("width", "5.5rem")
         .style("opacity", 0);
@@ -173,4 +174,61 @@ svg.append("text")
     function removeTooltip(){
         tooltip.style("opacity", 0);
     }
-}   
+
+//Creating the key
+function createKey() {
+    const keyWidth = 20;
+    const keyHeight = 100;
+    const keyMargin = 20;
+
+    const keyGroup = svg.append("g")
+        .attr("transform", `translate(${width + keyMargin}, 0)`);
+
+//Categorising the colours 
+    const ratings = [
+       
+        { label: "Best", color: "rgb(160, 82, 45)" },
+        { label: "Better", color: "rgb(223, 118, 11)" },
+        { label: "Good", color: "rgb(246, 182, 30)" },
+        { label: "Worst", color: "rgb(255, 235, 175)" }
+    ];
+
+//Small squares that have colours representing the episode ratings
+    keyGroup.selectAll(".key-item")
+        .data(ratings)
+        .enter()
+        .append("rect")
+        .attr("x", 0)
+        .attr("y", (d, i) => i * (keyHeight / ratings.length))
+        .attr("width", keyWidth)
+        .attr("height", keyHeight / ratings.length)
+        .style("fill", d => d.color)
+        .style("stroke", "black")
+        .on("mouseover", (e, rating) => highlight(rating))
+        .on("mouseout", removeHighlight);
+
+//Labels for the key
+    keyGroup.selectAll(".key-label")
+        .data(ratings)
+        .enter()
+        .append("text")
+        .attr("x", keyWidth + 5)
+        .attr("y", (d, i) => (i * (keyHeight / ratings.length)) + (keyHeight / (ratings.length * 2)))
+        .text(d => d.label)
+        .style("font-size", "14px")
+        .style("fill", "black");
+}
+
+createKey();
+
+//I couldn't get this to work I'm not sure what is the problem
+//When the user hovers over a key, the episodes that fall under that category should be highlighted
+    function highlight(rating) {
+        d3.selectAll(".key-item").style("opacity", 0.2);
+        d3.selectAll(".rating" + rating).style("opacity", 1);
+    }
+
+    function removeHighlight() {
+        d3.selectAll(".key-item").style("opacity", 1);
+    }
+}
