@@ -13,8 +13,9 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
         .then(psychData => {
 
 //Getting the season, episode and rating from both shows
+try{
     const brooklynEpisodes = brooklynData.map((episode, index) => {
-        return {
+        return{
             episodeNumber: index + 1,
             rating: episode.rating.average,
             season: episode.season,
@@ -23,7 +24,7 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
     });
 
     const psychEpisodes = psychData._embedded.episodes.map((episode, index) => {
-        return {
+        return{
              episodeNumber: index + 1,
              rating: episode.rating.average,
              season: episode.season,
@@ -37,6 +38,14 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
     const totalEpisodes = allEpisodes.length;
 
     createGraph(allEpisodes, totalEpisodes);
+} 
+    catch (error){
+    console.error("Error processing the shows' episode data:", error);
+    }
+})
+    .catch(error => {
+    console.error("Error fetching data from the APIs:", error);
+
     });
 });
 

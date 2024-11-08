@@ -7,6 +7,7 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
     })
 
     .then(function(data){
+    try{
 //This is an object that I will use to hold the number of episodes per season
     const episodes = {};
 
@@ -31,6 +32,14 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
     
 //Runs the function to create the chart
     createBubbleChart(seasonsData);
+
+} catch (error){
+    console.error("This is an issue with processing the API data:", error);
+}
+})
+.catch(function(error) {
+    console.error("There is an issue with fetching data from the API:", error);
+
 });
 
 //Creating the bubble chart

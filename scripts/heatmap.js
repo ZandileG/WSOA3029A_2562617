@@ -2,8 +2,17 @@
 fetch("https://api.tvmaze.com/shows/49/episodes")
     .then(response => response.json())
     .then(episodes => {
+
+    try{
         const seriesData = getData(episodes);
         createHeatmap(seriesData);
+    }   
+        catch (error){
+        console.error("There is an issue with processing the data:", error);
+        }
+    })
+    .catch(error => {
+        console.error("There is an issue with fetching the data:", error);
     });
       
 //Sorting the episodes in each season
