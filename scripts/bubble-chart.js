@@ -37,7 +37,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
     console.error("There is an issue with processing the API data:", error);
 }
 })
-.catch(function(error) {
+.catch(function(error){
     console.error("There is an issue with fetching data from the API:", error);
 
 });
