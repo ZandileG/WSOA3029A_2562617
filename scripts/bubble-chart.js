@@ -1,19 +1,20 @@
+//I used and modified the code from the bubble chart data visualisation tutorial in class.
+
 //Fetches my API data
-//The API has Brooklyn Nine-Nine Data
 fetch("https://api.tvmaze.com/shows/49/episodes")
     .then(function(response){
         return response.json();
     })
 
     .then(function(data){
-    //This is an object that I will use to hold the number of episodes per season
+//This is an object that I will use to hold the number of episodes per season
     const episodes = {};
 
-    //Finds the season for the current episode and does it for all the episodes
+//Finds the season for the current episode and does it for all the episodes
     data.forEach(function (episode){
     const seasonNumber = episode.season;
 
-    //If a season exists it must start counting epsiodes for the season starting from 0
+//If a season exists it must start counting epsiodes for the season starting from 0
     if (!episodes[seasonNumber]){
         episodes[seasonNumber] = 0;
     }
@@ -28,7 +29,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
         };
     });
     
-    //Runs the function to create the chart
+//Runs the function to create the chart
     createBubbleChart(seasonsData);
 });
 
@@ -161,6 +162,5 @@ d3.select("#return").on("click", function(){
 
     document.querySelector(".labels").style.display = "none";
     document.querySelector(".labels2").style.display = "none";
-});
-    
+});   
 }

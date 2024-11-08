@@ -1,5 +1,4 @@
 //Fetches my API data
-//The API has Brooklyn Nine-Nine Data
 fetch("https://api.tvmaze.com/shows/49/episodes")
     .then(response => response.json())
     .then(episodes => {
@@ -9,27 +8,25 @@ fetch("https://api.tvmaze.com/shows/49/episodes")
       
 //Sorting the episodes in each season
     function getData(episodes){
-    //This object will hold the episodes that I will group by season
+//This object will hold the episodes that I will group by season
         const seasons = {};
       
-    //For each episode it will get the season, episode number and the rating it has
-        episodes.forEach(episode => {
-          const season = episode.season;
-          const episodeNumber = episode.number;
-          const rating = episode.rating ? episode.rating.average : 0;
+//For each episode it will get the season, episode number and the rating it has
+    episodes.forEach(episode => {
+        const season = episode.season;
+        const episodeNumber = episode.number;
+        const rating = episode.rating ? episode.rating.average : 0;
       
-    //Creating an array for each season that will contain the episode number and rating
-          if (!seasons[season]){
-            seasons[season] = [];
-          }
-      
+//Creating an array for each season that will contain the episode number and rating
+    if (!seasons[season]){
+        seasons[season] = [];
+    }
           seasons[season].push({ episodeNumber, rating });
         });
       
     for (const season in seasons){
         seasons[season].sort((a, b) => a.episodeNumber - b.episodeNumber);
     }
-      
         return seasons;
     }
 
@@ -221,7 +218,7 @@ function createKey() {
 
 createKey();
 
-//I couldn't get this to work I'm not sure what is the problem
+//I couldn't get this to work here but it works for the scatterplot
 //When the user hovers over a key, the episodes that fall under that category should be highlighted
     function highlight(rating) {
         d3.selectAll(".key-item").style("opacity", 0.2);

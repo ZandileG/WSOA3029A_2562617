@@ -1,5 +1,4 @@
 //Newsletter Subscription Form
-
 //Get references to the text field elements
 const userName = document.getElementById("name");
 const userEmail = document.getElementById("email");
