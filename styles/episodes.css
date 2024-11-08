@@ -85,9 +85,17 @@ video{
 
 }
 
-section, .graph, .heatmap{
+.graph, .heatmap{
     margin-left: 10rem;
     margin-right: 10rem;
+    border-radius: 0.4rem;
+    background-color: white;
+    border: 0.125rem solid black;
+}
+
+section{
+    margin-left: 5rem;
+    margin-right: 5rem;
     border-radius: 0.4rem;
     background-color: white;
     border: 0.125rem solid black;
