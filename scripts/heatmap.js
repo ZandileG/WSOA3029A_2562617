@@ -218,7 +218,7 @@ function createKey() {
 
 createKey();
 
-//I couldn't get this to work here but it works for the scatterplot
+//I couldn't get this to work 
 //When the user hovers over a key, the episodes that fall under that category should be highlighted
     function highlight(rating) {
         d3.selectAll(".key-item").style("opacity", 0.2);

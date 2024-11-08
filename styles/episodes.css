@@ -16,6 +16,10 @@ h1{
     text-align: center;
 }
 
+article a{
+    color: rgb(116, 84, 5);
+}
+
 main{
     margin-left: 10rem;
     margin-right: 10rem;
