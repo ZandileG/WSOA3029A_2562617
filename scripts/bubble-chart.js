@@ -35,7 +35,7 @@ const seasonsData = Object.entries(episodes).map(function([seasonNumber, episode
 //Creating the bubble chart
 function createBubbleChart(data){
 let width = 1000;
-let height = 780;
+let height = 700;
 
 //Adds the svg in the section element in my Episodes page
 let svg = d3
@@ -50,11 +50,11 @@ const sizeScale = d3
     .domain([0, d3.max(data, d => d.count)])
     .range([10, 75]);
 
-//Colour scale to make the seasons with the same episode count the same colour
+//Colours to make the seasons with the same episode count the same colour
 const colorScale = d3
-    .scaleOrdinal()
-    .domain(data.map(d => d.count)) 
-    .range(d3.schemeCategory10); 
+.scaleOrdinal()
+.domain(data.map(d => d.count)) 
+.range(["rgb(15, 77, 145)", "rgb(160, 82, 45)", "rgb(223, 118, 11)", "rgb(246, 182, 30)", "rgb(128,128,128)"]);
 
 //Simulation for the bubbles 
 const simulation = d3
@@ -135,6 +135,12 @@ d3.select("#group").on("click", function(){
               .force("x", d3.forceX(d => d.count < avgEpisodeCount ? 100 : 700))
               .force("y", d3.forceY(height / 2))
               .alpha(1).restart();
+
+//These are labels that are in my html file that will appear when this button is clicked
+    document.querySelector(".l1").style.display = "none";
+    document.querySelector(".l2").style.display = "none";
+    document.querySelector(".l3").style.display = "block";
+    document.querySelector(".l4").style.display = "block";
 });
 
 //Splits the bubbles according to episode count
@@ -142,11 +148,19 @@ d3.select("#split").on("click", function(){
     simulation.force("x", d3.forceX(d => d.count * 48))
               .force("y", d3.forceY(d => d.count * 10))
               .alpha(1).restart();
+
+    document.querySelector(".l1").style.display = "block";
+    document.querySelector(".l2").style.display = "block";
+    document.querySelector(".l3").style.display = "none";
+    document.querySelector(".l4").style.display = "none";
 });
 
 //Returns the chart back to the way it was
 d3.select("#return").on("click", function(){
     location.reload();
+
+    document.querySelector(".labels").style.display = "none";
+    document.querySelector(".labels2").style.display = "none";
 });
     
 }

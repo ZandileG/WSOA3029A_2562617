@@ -24,6 +24,25 @@ main{
     font-size: 1.05rem;
 }
 
+.labels, .labels2{
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: -4rem;
+    z-index: 2;
+}
+
+.l1, .l3{
+    margin-left: 10%;
+    margin-right: 40%;
+    display: none;
+    font-weight: bold;
+}
+
+.l2, .l4{
+    display: none;
+    font-weight: bold;
+}
+
 .line{
     padding-bottom: 0.5rem;
 }
